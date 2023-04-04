@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login - Register</title>
+      <link rel="stylesheet" href="login-register.css" />
+      <script src="/jd-kalla/docs/fontawesome/all.js"></script>
+</head>
+
+<body>
+      <div class="container" id="container">
+            <!-- KODE UNTUK FORM REGISTER -->
+            <div class="form-container register-container">
+                  <form action="" method="post">
+                        <h2>Register Here</h2>
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="john1@gmail.com" name="email" id="email" required>
+
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="john" name="uname" id="uname" required>
+
+                        <label for="no-hp"><b>No. Handphone</b></label>
+                        <input type="tel" placeholder="0812-3456-7890" name="no-hp" id="no-hp"
+                              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+
+                        <label for="role"><b>Role/Pekerjaan</b></label>
+                        <select id="role" aria-placeholder="Pilih Role/Pekerjaan">
+                              <option value="Pekerjaan">---------</option>
+                              <option value="Penghasil">Petani/Pekebun/Nelayan</option>
+                              <option value="Distributor">Pedagang/Distributor</option>
+                              <option value="Pengusaha">Pengusaha/Pembeli</option>
+                        </select>
+                        <label for="alamat"><b>Alamat</b></label>
+                        <input type="text" placeholder="Masukkan Alamat Lengkap" name="alamat" id="alamat"
+                              style="height: 100px;" required>
+
+                        <label for="psw"><b>Kata Sandi</b></label>
+                        <input type="password" placeholder="Masukkan Kata Sandi" name="psw" id="psw" required>
+
+                        <label for="psw-repeat"><b>Konfirmasi Kata Sandi</b></label>
+                        <input type="password" placeholder="Masukkan Sekali Lagi" name="psw-repeat" id="psw-repeat"
+                              required>
+
+                        <button type="submit">Register</button>
+                  </form>
+            </div>
+
+            <!-- KODE UNTUK FORM LOGIN -->
+            <div class="form-container login-container">
+                  <form action="" method="post">
+                        <h2>Login Here</h2>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="email" placeholder="john1@gmail.com" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Masukkan Password" name="psw" required>
+
+                        <div class="content">
+                              <div class="checkbox">
+
+                                    <input type="checkbox" checked="checked" name="remember">Remember me
+
+                              </div>
+
+                              <div class="pass-link">
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                              </div>
+                        </div>
+                        <button type="submit">Login</button>
+                        <span>or use your account</span>
+                        <div class="social-container">
+                              <a href="#" class="social"><i class="fab fa-facebook"></i></a>
+                              <a href="#" class="social"><i class="fab fa-google"></i></a>
+                              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                  </form>
+            </div>
+
+            <div class="overlay-container">
+                  <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                              <h1 class="title">
+                                    Halo <br />
+                                    Agen of <br />
+                                    Change
+                              </h1>
+                              <p>Already have an account? Please <button class="ghost" id="login">
+                                          Login <i class="fa-solid fa-arrow-left login"></i></button>
+
+                              </p>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                              <h1 class="title">
+                                    Let's <br />
+                                    Begin
+                              </h1>
+                              <p>
+                                    Don't have an account? Please
+                                    <button class="ghost" id="register">
+                                          Register
+                                          <i class="fa-solid fa-arrow-right register"></i>
+                                    </button>
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script src="login-register.js"></script>
+
+</body>
+
+</html>

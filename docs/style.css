@@ -112,7 +112,7 @@ li.dropdown {
 }
 
 .definisi p {
-      font-family: NunitoSansBold,sans-serif;
+      font-family: NunitoSansBold, sans-serif;
       color: #535961;
       font-size: 16px;
 }
@@ -123,7 +123,7 @@ li.dropdown {
       border-radius: 8px;
       padding-right: 10px;
       padding-left: 10px;
-      
+
 
 }
 
@@ -140,7 +140,7 @@ li.dropdown {
       font-size: 18px;
       font-weight: 550;
       color: #535961;
-      font-family: NunitoSansBold,sans-serif;
+      font-family: NunitoSansBold, sans-serif;
       border-radius: 8px;
 }
 
@@ -155,7 +155,7 @@ li.dropdown {
             flex-direction: row;
       }
 
-      .nilai-box .nilai{
+      .nilai-box .nilai {
             flex-direction: row;
       }
 }
@@ -354,7 +354,7 @@ img {
       font-size: 16px;
       font-weight: 550;
       color: #535961;
-      font-family: NunitoSansBold,sans-serif;
+      font-family: NunitoSansBold, sans-serif;
       margin-top: 0.5vh;
       margin-bottom: 2vh;
 }
@@ -393,6 +393,7 @@ img {
 ul {
       list-style: none;
 }
+
 .row {
       display: flex;
 }
@@ -532,7 +533,7 @@ footer {
       }
 
       /* responsive nilai NgupaApp */
-      .nilai-box .nilai{
+      .nilai-box .nilai {
             width: 50%;
       }
 }

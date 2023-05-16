@@ -2,27 +2,15 @@
 ::before,
 ::after {
       box-sizing: border-box;
-      /* padding: 0; */
-      /* margin: 0; */
-      /* max-width: none; */
 }
 
 body {
-      /* padding: 0; */
       margin: 0;
-      box-sizing: border-box;
       font-family: "Poppins", sans-serif;
-      /* max-width: max-content; */
-      /* display: flex; */
-      /* place-items: center; */
-      /* height: 100vh; */
-      /* flex-direction: column; */
-      /* justify-content: center; */
-      /* align-items: center; */
 }
 
+/* NAVIGATION BAR */
 nav {
-      /* position: static; */
       top: 0;
       right: 0;
       z-index: 9999;
@@ -39,8 +27,6 @@ nav {
 nav .logo {
       font-size: 1.rem;
       width: 30%;
-      /* height: 50%; */
-      /* position: static; */
 }
 
 nav .logo img {
@@ -60,28 +46,13 @@ nav .logo img {
       text-decoration: none;
 }
 
-.btn {
-      padding: 3px 6px;
-      font-size: 12px;
-      font-weight: 600;
-      color: #fff;
-      background-color: #95e8ff65;
-      width: 80px;
-      margin-left: 30px;
-      text-align: center;
-      cursor: pointer;
-      border-radius: 10px;
-}
-
 .nav-links a:hover {
       color: #95e8ff65;
-      /* scale: 2.5s; */
 }
 
 .nav-links .btn:hover {
-      background-color: #95e8ff;
-      color: #ffffff;
-      /* animation-delay: 0.2s; */
+      background-color: #95e8ff00;
+      color: #95e8ff;
 }
 
 li a,
@@ -89,19 +60,16 @@ li a,
       display: inline-block;
       color: rgb(255, 255, 255);
       text-align: center;
-      /* padding: 14px 16px; */
       text-decoration: none;
 }
 
 li a:hover,
 .dropdown:hover .dropbtn {
-      /* background-color: #007bff; */
       transition: all 0.5s ease;
 }
 
 li.dropdown {
       display: inline-block;
-      /* padding: 14px 16px; */
 }
 
 .dropdown-content {
@@ -112,14 +80,12 @@ li.dropdown {
 }
 
 .dropdown-content a {
-      /* color: black; */
       text-decoration: none;
       display: block;
       text-align: left;
 }
 
 .dropdown-content a:hover {
-      /* background-color: #ffffff6a; */
       color: #95e8ff;
 }
 
@@ -127,6 +93,7 @@ li.dropdown {
       display: block;
 }
 
+/* DEFINISI & KEUNGGULAN APLIKASI */
 .content {
       margin: 8px;
       margin-top: 8.8vh;
@@ -181,10 +148,7 @@ li.dropdown {
       width: 100px;
       height: auto;
       margin: 10px;
-      /* max-width: 20px; */
-      /* padding: 10px; */
 }
-
 
 @media screen and (min-width: 700px) {
       .content {
@@ -192,12 +156,11 @@ li.dropdown {
       }
 
       .nilai-box .nilai{
-            /* display: column; */
             flex-direction: row;
-            /* max-width: 50px; */
       }
 }
 
+/* BACKGROUND & MOTTO */
 .content-wrapper {
       display: flex;
       flex-direction: row;
@@ -233,126 +196,25 @@ li.dropdown {
       background-size: 100%;
 }
 
-
-/* KONTEN UNTUK BAGIAN EVENTS/BERITA TERBARU  */
-
-/* .events {
-      width: 100%;
-      position: relative;
+.btn {
+      border: none;
+      padding: 3px 6px;
+      margin-left: 50px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #84dcf5e4;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 10px;
 }
 
-.events .news-box-1 {
-      position: absolute;
-      height: 45vh;
-      width: 100%;
-      background-size: cover;
-      background-position: center;
-      animation: news-box-1 12.5s infinite;
-      border-radius: 8px;
-      margin-top: 2vh;
-
-}
-
-.events .news-box-1:nth-child(1) {
-      background-image: url("https://akcdn.detik.net.id/visual/2018/03/02/d15811fd-74a5-4c73-83a2-47ea5c056105_169.jpeg?w=715&q=90");
-      animation-delay: 0;
-}
-
-.events .news-box-1:nth-child(2) {
-      background-image: url("https://asset.kompas.com/crops/S_oG_5SNKUKpAYMPPdLuwtEWd7k=/7x8:917x615/750x500/data/photo/2023/03/20/6418338060d55.jpg");
-      animation-delay: -2.5s;
-}
-
-.events .news-box-1:nth-child(3) {
-      background-image: url("https://pict.sindonews.net/dyn/732/pena/news/2022/05/05/185/761455/pengusaha-kuliner-ri-terkendala-bumbu-nusantara-di-mancanegara-menparekraf-saya-dengar-langsung-rlw.jpeg");
-      animation-delay: -5s;
-}
-
-.events .news-box-1:nth-child(4) {
-      background-image: url("https://www.djkn.kemenkeu.go.id/files/images/2022/11/beverage-factory-interior-conveyor-with-bottles-juice-water-equipments.jpg");
-      animation-delay: -7.5s;
-}
-
-.events .news-box-1:nth-child(5) {
-      background-image: url("https://www.simplidots.com/wp-content/uploads/05278690391d907580f8d7fe03499ed9-agrobogautama-1.jpg");
-      animation-delay: -10s;
-}
-
-@keyframes news-box-1 {
-      0%, 16%, 100% {
-            transform: translateX(0);
-            opacity: 1;
-            animation-timing-function: ease;
-            z-index: 0;
-      }
-      20% {
-            transform: translateX(-100%);
-            opacity: 0;
-            animation-timing-function: step-end;
-            z-index: 0;
-      }
-      96% {
-            transform: translateX(100%);
-            opacity: 1;
-            animation-timing-function: step-end;
-            z-index: -1;
-      }
-}
-
-.events .news-links a {
-      text-decoration: none;
-      color: inherit;
-      font-size: 20px;
-      font-weight: bold;
-      justify-content: center;
-      display: flex;
-      margin-top: 10vh;
-}
-
-.events ul li {
-      position: relative;
-      text-align: justify;
-      padding: 150px;
-      list-style-type: none;
-      font-size: 30px;
-      font-weight: bold;
-}
-
-ul li p {
-      display: flex;
-      flex-direction: row;
-      position: static;
-      text-align: justify;
-}
-
-.li1 {
-      display: flex;
-      flex-direction: row;
-      color: #007bff;
-      font-size: 15px;
-}
-
-.li2 {
-      display: flex;
-      flex-direction: row;
-      color: #8c8d90;
-      font-size: 15px;
-} */
-
-/* KODE UNTUK SLIDER ARTIKEL-BOX */
-
-/* :root {
-      font-size: 16px;
-} */
-
+/* SLIDER ARTIKEL-BOX */
 .artikel-box {
       overflow: hidden;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 5vh;
-      /* margin: auto; */
-
 }
 
 .slide {
@@ -397,33 +259,21 @@ ul li p {
 }
 
 
-/* KODE UNTUK NEWS/EVENT TERBARU */
-
+/* NEWS/EVENT TERBARU */
 .news {
-      /* margin: 30px 0 0; */
-      /* padding: 0; */
-      /* margin: auto; */
       margin-top: 1vh;
       margin-bottom: 1.5rem;
       display: flex;
       flex-wrap: wrap;
-      /* justify-content: center; */
-      /* max-width: 1200px; */
-      /* width: max-content; */
-      /* margin-block: 1.5rem; */
-      /* margin: auto; */
       gap: 8px;
-      /* background-color: #95e8ff65; */
       border-radius: 8px;
       padding-left: 5px;
-      /* padding-right: 5px; */
 
 }
 
 .news-box {
       display: flex;
       flex-direction: column;
-      /* width: clamp(20rem, calc(20rem + 2vw), 22rem); */
       width: 237px;
       height: 50vh;
       overflow: hidden;
@@ -449,16 +299,13 @@ img {
 
 .news-body {
       padding: 4px 4px 0 4px;
-      /* padding-top: 4px; */
       display: flex;
       flex-direction: column;
-      /* gap: 0.5em; */
 }
 
 .tag {
       align-self: flex-start;
       padding: 0.25em 0.75em;
-      /* padding-left: 6px 6px; */
       border-radius: 1em;
       font-size: 0.5rem;
 }
@@ -468,14 +315,12 @@ img {
 }
 
 .tag-blue {
-      /* padding-left: 2px; */
       background: #56ccf2;
       background: linear-gradient(to bottom, #2f80ed, #56ccf2);
       color: #fafafa;
 }
 
 .news-body h4 {
-      /* font-size: 1rem; */
       font-size: 14px;
       text-transform: capitalize;
 
@@ -486,13 +331,10 @@ img {
       margin-top: 0.1px;
 }
 
-/* KODE UNTUK BAGIAN FITUR UTAMA */
+/* FITUR UTAMA */
 .fitur-utama {
       display: grid;
-      /* gap: 30px; */
       grid-template-columns: auto auto auto;
-      /* padding: 10px; */
-      /* background-color: #535961; */
       margin-bottom: 2vh;
       margin-left: 78px;
       margin-right: 8px;
@@ -500,59 +342,68 @@ img {
 }
 
 .fitur {
-      /* padding: 20px 20px 0 20px; */
-      /* font-size: 18px; */
       text-align: center;
       margin: 0 3rem 3rem 0;
-      /* background-color: #95e8ff65; */
-      /* border-radius: 10px 50px 10px 100px; */
 }
 
 .fitur img {
       width: 90%;
-      /* justify-content: center; */
-      /* padding: 10px; */
-      /* margin: 10px; */
 }
 
 .fitur h6 {
-      /* text-align: center; */
       font-size: 16px;
       font-weight: 550;
       color: #535961;
       font-family: NunitoSansBold,sans-serif;
-      /* border-radius: 8px; */
       margin-top: 0.5vh;
       margin-bottom: 2vh;
 }
 
-/* KODE UNTUK BAGIAN FOOTER */
+/* JOIN BUTTON */
+.button {
+      display: flex;
+      justify-content: center;
+}
+
+.join-button {
+      border: none;
+      background-color: #84dcf5e4;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 18px;
+      width: 30%;
+      padding: 20px;
+      margin-bottom: 100px;
+      margin-top: 20px;
+}
+
+.join-button a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      font-size: 15px;
+}
+
+.join-button:hover {
+      background-color: #3acff9;
+      transition: all 0.5s ease;
+}
+
+/* BAGIAN FOOTER */
 ul {
       list-style: none;
-      /* display: flex; */
 }
 .row {
       display: flex;
-      /* flex-wrap: wrap; */
-      /* flex-direction: row; */
-      /* max-width: 1170px; */
-      /* margin: auto; */
-      /* margin-top: 500px; */
 }
 
 footer {
       background-image: linear-gradient(#a5bccb, #38a3a5);
-      /* background-image: linear-gradient(#040336, #030303); */
-      /* padding: 10px 0; */
       position: relative;
-      /* bottom: 0; */
-      /* width: 100%; */
-      /* font-family: 'Poppins', sans-serif; */
       line-height: 1.5;
 }
 
 .footer-col {
-      /* width: 25%; */
       padding: 0 15px;
 }
 
@@ -560,8 +411,6 @@ footer {
       font-size: 18px;
       color: #ffffff;
       text-transform: capitalize;
-      /* margin-bottom: 35px; */
-      /* margin-top: 100px; */
       font-weight: 500;
       position: relative;
 }
@@ -578,19 +427,12 @@ footer {
       width: 50px;
 }
 
-/* .footer-col ul li:not(:last-child) {
-      margin-bottom: 10px;
-      flex-direction: column;
-} */
-
 .footer-col ul li a {
       font-size: 16px;
       text-transform: capitalize;
       color: #ffffff;
-      /* text-decoration: none; */
       font-weight: 300;
       color: #ffffff;
-      /* display: block; */
       transition: all 0.3s ease;
 }
 

@@ -5,6 +5,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/x-icon" href="image/logoapp2.png">
       <title>User Dashboard | NgupaApp</title>
       <link rel="stylesheet" href="user_dashboard.css" />
       <script src="fontawesome/all.js"></script>
@@ -51,8 +52,10 @@
       <!-- KODE UNTUK HANDLE SEARCH BAR ICON -->
       <div class="search-bar">
             <input type="text" placeholder="Search here...">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <button><a href=""><i class="fa fa-store"></i></a></button>
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+            <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">
+                  <i class="fa fa-store"></i>
+            </button>
       </div>
 
       <!-- KODE UNTUK HANDLE TOP NEWS -->
@@ -185,6 +188,42 @@
             <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
+      <!-- KODE UNTUK HADNLE FORM REGISTRASI TOKO -->
+      <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Button">&times;</span>
+
+            <!-- code for form registration -->
+            <form class="modal-content" action="/action_page.php">
+                  <div class="container">
+                        <h3>DAFTARKAN TOKO ANDA</h3>
+                        <label for="store-name"><b>Nama Toko</b></label>
+                        <input type="text" placeholder="Masukan Nama Toko" name="store-name" required>
+
+                        <label for="store-description"><b>Deskripsi Toko</b></label>
+                        <input type="text" placeholder="Masukan Deskripsi Toko" name="store-description" required>
+
+                        <label for="product-name"><b>Nama Produk</b></label>
+                        <input type="text" placeholder="Masukan Nama Produk" name="product-name" required>
+                        
+                        <label for="price"><b>Harga Produk</b></label>
+                        <input type="text" placeholder="Rp0 ,- /kg" name="price" required>
+
+                        <label for="product-detail"><b>Detail Produk</b></label>
+                        <input type="text" placeholder="Masukan Detail Lengkap Produk" name="detail" required>
+
+                        <!-- code for save button & foto produk -->
+                        <div class="file-input">
+                              <input type="file" id="fileInput" name="filename" class="add-photo">
+                        </div>
+                       
+                        <div class="save">
+                              <button type="submit" class="savebtn">Simpan</button>
+                        </div>
+                  </div>
+            </form>
+      </div>
+
       <!-- KODE UNTUK MENGHANDLE BAGIAN FOOTER -->
       <footer>
             <div class="row">
@@ -219,8 +258,10 @@
       </footer>
 
 
-      <!-- KODE UNTUK JAVASCRIPT SLIDER -->
+      <!-- BAGIAN HANDLE JAVASCRIPT -->
       <script>
+
+            // SCRIPT FOR SLIDER
             var slideIndex = 1;
             showSlides(slideIndex);
 
@@ -246,6 +287,17 @@
                   }
                   slides[slideIndex - 1].style.display = "block";
                   dots[slideIndex - 1].className += " active";
+            }
+
+            // SCRIPT POP-UP REGISTER FORM
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // Jika user menekan apapun di luar form akan otomatis close
+            window.onclick = function(event) {
+                  if (event.target == modal) {
+                        modal.style.display = "none"
+                  }
             }
       </script>
 

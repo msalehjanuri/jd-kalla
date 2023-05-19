@@ -117,7 +117,7 @@
                   <p class="price">Rp5.000,- /kg</p>
 
                   <div class="product-button">
-                        <p><button>Detail</button></p>
+                        <p><button id="showPageButton">Detail</button></p>
                         <p><button>Delete</button></p>
                         <p><button>Update</button></p>
                   </div>
@@ -216,6 +216,52 @@
             </div>
       </div>
 
+      <!-- UNTUK MENGHANDLE DETAIL PRODUK -->
+
+      <div class="detail-product" id="hiddenPage">
+
+            <!-- CLOSE BUTTON -->
+            <span class="close" id="closeButton">&times;</span>
+            <div class="outside">
+                  <h5>UD MAKMUR SEJAHTERA</h5>
+                  <div class="inside">
+                        <div class="inside1">
+                              <p style="font-size: 16px; font-weight: bold; color: rgba(0,0,0,0.8);">
+                                    Jagung Merah</p>
+                              <p style="font-size: 9px; color: rgba(0,0,0,0.8);">
+                                    1 mg lalu - Bima, NTB</p>
+                              <br>
+                              <p style="font-size: 12px;font-weight: bold; color: rgba(0,0,0,0.7);">
+                                    Rp5.000,- /kg</p>
+                              <br>
+                        </div>
+                        <div class="inside2">
+                              <img class="detail-img" src="image/foto produk/Jagung Merah.jpg"
+                                    alt="src:unplash-jagungmerah">
+                        </div>
+                        <div class="inside3">
+                              <p
+                                    style="font-size: 15px; font-weight: bold; color: rgba(0,0,0,0.9); padding-bottom: 6px;">
+                                    Informasi Tambahan</p>
+                              <p style="font-size: 13px;">
+                                    Jagung Merah yang diperoleh langsung dari tangan para petani jagung, dan telah
+                                    melalui proses perawatan yang menjamin kualitas nya.
+                                    <br><br>
+                                    Proses panen dilakukan dengan menggunakan kombinasi cara tradisional dan modern
+                                    untuk proses penggilingan, sehingga menghasilkan kualitas yang terbaik.
+                                    <br><br>
+                                    Tersedia jagung yang sudah di giling dan yang masih baru dipetik.
+                              </p>
+                        </div>
+                  </div>
+
+                  <div class="ud-button">
+                        <button>Delete</button>
+                        <button>Update</button>
+                  </div>
+            </div>
+      </div>
+
       <!-- UNTUK MENGHANDLE BAGIAN FOOTER -->
       <footer>
             <div class="row">
@@ -250,6 +296,24 @@
                   </div>
             </div>
       </footer>
+
+      <!-- JAVASCRIPT -->
+      <script>
+            // SCRIPT FOR DETAIL PAGE
+            var showPageButton = document.getElementById('showPageButton');
+            var hiddenPage = document.getElementById('hiddenPage');
+            var closeButton = document.getElementById('closeButton');
+
+
+            showPageButton.addEventListener('click', function () {
+                  hiddenPage.classList.add('active');
+            });
+
+            closeButton.addEventListener('click', function () {
+                  hiddenPage.classList.remove('active')
+            });
+      </script>
+
 </body>
 
 </html>

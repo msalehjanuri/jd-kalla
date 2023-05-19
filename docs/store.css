@@ -1,4 +1,3 @@
-
 *,
 ::before,
 ::after {
@@ -96,7 +95,8 @@
       color: #000000;
 }
 
-.menu ul li a:hover, #icon:hover {
+.menu ul li a:hover,
+#icon:hover {
       color: #84dcf5e4;
       transition: all 0.5s ease;
 }
@@ -150,7 +150,7 @@
 /* CARD PEMBUNGKUS PRODUK */
 .product-card {
       margin: 1px 1px 10px 1px;
-      box-shadow:  0 4px 8px 0 rgba(0,0,0,0.4);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
       max-width: 300px;
       padding: 14px 16px 2px 16px;
       border-radius: 10px;
@@ -200,6 +200,111 @@ img {
       color: #fff;
       background-color: rgba(8, 80, 120, 0.7);
       transition: all 0.4s ease;
+}
+
+/* BAGIAN DETAIL PRODUCT */
+/* transparant background */
+.detail-product {
+      position: fixed;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 98.8%;
+      background-color: rgba(129, 125, 125, 0.4);
+      transition: bottom 0.8s ease;
+      border-radius: 30px 30px 0 0;
+      z-index: 1;
+}
+
+.detail-product.active {
+      bottom: 0;
+}
+
+/* bagian nama toko user / outside background */
+.outside {
+      position: relative;
+      background-color: #fff;
+      width: 317.39px;
+      height: 443.48px;
+      border-radius: 15px;
+      /* margin-top: 10px; */
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+}
+
+h5 {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 12px;
+      text-align: end;
+      margin-right: 14px;
+      /* margin-top: 12px; */
+      padding-top: 7px;
+      padding-bottom: 3px;
+}
+
+/* detail produk / inside background */
+.inside {
+      display: flex;
+      flex-wrap: wrap;
+      background: linear-gradient(to bottom, rgba(8, 80, 120, 0.7), rgba(133, 216, 206, 0.7));
+      width: 291.3 px;
+      height: 349.57px;
+      border-radius: 15px;
+      margin: 3px 10px 10px 10px;
+      padding: 14px 10px 10px 10px;
+}
+
+.inside3 {
+      text-align: justify;
+}
+
+.detail-img {
+      height: 105px;
+      border-radius: 10px;
+      margin-left: 15px;
+
+}
+
+/* bagian button */
+.ud-button {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 27px;
+}
+
+.ud-button button {
+      background-color: #3DA8AF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      width: 128.7px;
+      height: 25.22px;
+      cursor: pointer;
+}
+
+.ud-button button:hover {
+      /* opacity: 0.9; */
+      color: #fff;
+      background-color: rgba(8, 80, 120, 0.7);
+      transition: all 0.4s ease;
+}
+
+/* for close button ('X' icon) */
+.close {
+      position: absolute;
+      right: 15px;
+      top: -5px;
+      font-size: 35px;
+      /* font-weight: bold; */
+      color: #3C3C43;
+}
+
+.close:hover,
+.close:focus {
+      color: #f44336;
+      cursor: pointer;
 }
 
 /* BAGIAN FOOTER */

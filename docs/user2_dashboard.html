@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" type="image/x-icon" href="image/logoapp2.png">
+      <title>User Dashboard | NgupaApp</title>
+      <link rel="stylesheet" href="user2_dashboard.css" />
+      <script src="fontawesome/all.js"></script>
+</head>
+
+<body>
+      <nav class="navbar">
+            <div class="navbar-container">
+                  <div class="logo">
+                        <a href="user2_dashboard.html"><img src="image/logoapp2.png" alt="logo"></a>
+                  </div>
+
+                  <div class="menu">
+                        <ul>
+                              <li><a href="">About Us</a></li>
+                              <li><a href="">News</a></li>
+                              <li><a href="">Contact</a></li>
+                              <li><a href="">Service</a></li>
+                              <li class="dropdown">
+                                    <a href="javascript:void(0)" class="dropbtn">Language</a>
+                                    <div class="dropdown-menu">
+                                          <a href="">Indonesia</a>
+                                          <a href="">English</a>
+                                    </div>
+                              </li>
+                        </ul>
+                  </div>
+                  <div class="button">
+                        <button class="profile-button" id="profile">
+                              <span class="bar">Rams (Pengusaha)</span>
+                        </button>
+                        <button class="out-button" id="out">
+                              <span class="bar"><a href="home.html">Logout</a></span>
+                        </button>
+                  </div>
+            </div>
+      </nav>
+
+      <p>Halo, <strong>Rams!</strong></p>
+
+      <!-- HANDLE BAGIAN SEARCH BAR ICON -->
+      <div class="search-bar">
+            <input type="text" name="search" placeholder="Search here...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+
+      <!-- HANDLE TOP NEWS -->
+      <div class="image-container">
+            <img src="https://cdn0-production-images-kly.akamaized.net/edsvTK9PWnDuJpo_fz8KChGNqes=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4105435/original/052305100_1659090153-Foto_Bersama_Pemenang_dgn_Menteri.JPG"
+                  alt="src:Liputan6">
+            <a href="https://www.liputan6.com/lifestyle/read/5027671/18-pemenang-e-kuliner-awards-2022-ada-pengusaha-pempek-hingga-pie-susu"
+                  class="overlay-link">18 Pemenang e-Kuliner Awards 2022, Ada Pengusaha Pempek hingga Pie Susu</a>
+      </div>
+
+      <!-- HANDLE FITUR UTAMA -->
+      <div class="fitur-utama" id="fitur">
+            <h3>Fitur Utama</h3>
+            <div class="image-row">
+                  <div class="image-item">
+                        <img src="image/Online store _Isometric.png" alt="Toko">
+                        <div class="image-caption"><b>Membuat Toko</b></div>
+                  </div>
+                  <div class="image-item">
+                        <img src="image/Finance app_Isometric.png" alt="Harga">
+                        <div class="image-caption"><b>Memantau Harga</b></div>
+                  </div>
+                  <div class="image-item">
+                        <img src="image/Factory Worker_Isometric.png" alt="Rekan">
+                        <div class="image-caption"><b>Mencari Distributor</b></div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- HANDLE PROFIL SINGKAT USER -->
+      <div class="profil-singkat">
+
+            <!-- user 1 -->
+            <div class="profil-card" id="showPageButton">
+                  <!-- <div class="card1"> -->
+                  <img src="image/foto user/djaja.jpg" alt="">
+                  <!-- </div> -->
+                  <div class="card2">
+                        <p>Djaja</p>
+                        <p>Petani</p>
+                        <p>UD MAKMUR SEJAHTERA</p>
+                  </div>
+            </div>
+
+            <!-- user 2 -->
+            <div class="profil-card">
+                  <img src="image/foto user/helma.jpg" alt="">
+                  <div class="card2">
+                        <p>Helma</p>
+                        <p>Petani Umbi-Umbian</p>
+                        <p>UMBI & UMBIAN STORE</p>
+                  </div>
+            </div>
+
+            <!-- user 3 -->
+            <div class="profil-card">
+                  <img src="image/foto user/mulyani.jpg" alt="">
+                  <div class="card2">
+                        <p>Mulyani</p>
+                        <p>Petani Kol</p>
+                        <p>ABADI BERSAMA</p>
+                  </div>
+            </div>
+
+            <!-- user 4 -->
+            <div class="profil-card">
+                  <img src="image/foto user/mural.jpg" alt="">
+                  <div class="card2">
+                        <p>Mural</p>
+                        <p>Nelayan</p>
+                        <p>UD VITAMIN SEA</p>
+                  </div>
+            </div>
+
+            <!-- user 5 -->
+            <div class="profil-card">
+                  <img src="image/foto user/amrila.jpg" alt="">
+                  <div class="card2">
+                        <p>Amrila</p>
+                        <p>Peternak Sapi</p>
+                        <p>TOKO SAPI KITA</p>
+                  </div>
+            </div>
+
+            <!-- user 6 -->
+            <div class="profil-card">
+                  <img src="image/foto user/anindia.jpg" alt="">
+                  <div class="card2">
+                        <p>Aninda</p>
+                        <p>Pedagang Beras</p>
+                        <p>TOKO BERAS BERSAMA</p>
+                  </div>
+            </div>
+
+            <!-- user 7 -->
+            <div class="profil-card">
+                  <img src="image/foto user/enril.jpg" alt="">
+                  <div class="card2">
+                        <p>Enril</p>
+                        <p>Peternak Unggas</p>
+                        <p>UD UNGGAS JAYA</p>
+                  </div>
+            </div>
+
+            <!-- user 8 -->
+            <div class="profil-card">
+                  <img src="image/foto user/enrick.jpg" alt="">
+                  <div class="card2">
+                        <p>Enrick</p>
+                        <p>Nelayan</p>
+                        <p>TOKO FRESH SEAWEED</p>
+                  </div>
+            </div>
+
+            <!-- user 9 -->
+            <div class="profil-card">
+                  <img src="image/foto user/emila.jpg" alt="">
+                  <div class="card2">
+                        <p>Emila</p>
+                        <p>Pedagang Ayam</p>
+                        <p>CHICKEN STORE</p>
+                  </div>
+            </div>
+
+            <!-- user 10 -->
+            <div class="profil-card">
+                  <img src="image/foto user/ebiya.jpg" alt="">
+                  <div class="card2">
+                        <p>Ebiya</p>
+                        <p>Peternak</p>
+                        <p>TOKO DAGING SEGAR</p>
+                  </div>
+            </div>
+
+            <!-- user 11 -->
+            <div class="profil-card">
+                  <img src="image/foto user/omar.jpg" alt="">
+                  <div class="card2">
+                        <p>Omar</p>
+                        <p>Distributor Hasil Laut</p>
+                        <p>PT SEAFOOD Tbk.</p>
+                  </div>
+            </div>
+
+            <!-- user 12 -->
+            <div class="profil-card">
+                  <img src="image/foto user/henin.jpg" alt="">
+                  <div class="card2">
+                        <p>Henin</p>
+                        <p>Distributor Unggas & Beras</p>
+                        <p>PT KITA BISA Tbk.</p>
+                  </div>
+            </div>
+      </div>
+
+      <!-- HANDLE BAGIAN NEWS -->
+      <div class="news-body">
+            <div class="news-row">
+                  <div class="news" id="news1">
+                        <a
+                              href="https://ekonomi.republika.co.id/berita/rrva5b490/airlangga-perdagangan-indopasifik-dorong-pertumbuhan-dunia">
+                              <img src="https://static.republika.co.id/uploads/images/inpicture_slide/menteri-koordinator-menko-bidang-perekonomian-airlangga-hartarto-bertemu-federation_221214151853-288.jpeg"
+                                    alt="">
+                              <p><strong>Airlangga: Perdagangan Indo-Pasifik Dorong Pertumbuhan Dunia</strong></p>
+                              <p>Pemerintah dan Kadin berupaya memperkuat kerja sama perdagangan.</p>
+                              <p><strong>REPUBLIKA - Selasa, 21 Maret 2023 17:51 WIB</strong></p>
+                        </a>
+                  </div>
+            </div>
+            <div class="news-row">
+                  <div class="news" id="news2">
+                        <a
+                              href="https://www.liputan6.com/hot/read/5176030/profil-pt-gandum-mas-kencana-produsen-bahan-kue-ternama-di-indonesia">
+                              <img src="https://cdn1-production-images-kly.akamaized.net/lmybtrKnMIQWmXwttscOI6l-C3Q=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4286574/original/021180500_1673326430-gandumas_kencana_7.jpg"
+                                    alt="">
+                              <p><strong>Profil PT Gandum Mas Kencana, Produsen Bahan Kue Ternama di Indonesia</strong>
+                              </p>
+                              <p>Liputan6.com - Selasa, 10 Jan 2023, 13:00 WIB</p>
+                        </a>
+                  </div>
+                  <div class="news" id="news2">
+                        <a
+                              href="https://investor.id/business/219509/anak-muda-didorong-jadi-pengusaha-sektor-pertanian">
+                              <img src="https://img2.beritasatu.com/cache/investor/910x580-2/1597216311.jpg" alt="">
+                              <p><strong>Anak Muda Didorong Jadi Pengusaha Sektor Pertanian</strong></p>
+                              <p>INVESTOR.ID - Rabu, 12 Aug 2020 | 14:07 WIB</p>
+                        </a>
+                  </div>
+            </div>
+      </div>
+
+      <!-- HANDLE BAGIAN DETAIL PROFILE USER (ROLE PENJUAL) with show push to up -->
+      <div class="detail-profile" id="hiddenPage">
+            <span class="close" id="closeButton">&times;</span>
+
+            <div class="outside">
+                  <div class="inside">
+                        <img src="image/foto user/djaja.jpg" alt="" class="front-image" id="id01">
+                        <img src="image/agri2.jpg" alt="background" class="back-image">
+                        <!-- <hr> -->
+                        <div class="inside1">
+                              <table>
+                                    <!-- <tr>
+                                          <th></th>
+                                          <th></th>
+                                          <th></th>
+                                    </tr> -->
+                                    <tr>
+                                          <td>Nama</td>
+                                          <td>:</td>
+                                          <td>Andi Widjaja</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Role</td>
+                                          <td>:</td>
+                                          <td>Petani</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Toko</td>
+                                          <td>:</td>
+                                          <td>UD MAKMUR SEJAHTERA</td>
+                                    </tr>
+                                    <tr>
+                                          <td>No. HP</td>
+                                          <td>:</td>
+                                          <td>081234567890</td>
+                                    </tr>
+                                    <tr>
+                                          <td>Alamat</td>
+                                          <td>:</td>
+                                          <td>Jl. Rajawali Rt/Rw. 01/01, Bojong Asmat, Rawamangun, Sumedang - Jawa Barat
+                                          </td>
+                                    </tr>
+                              </table>
+
+                              <div class="call-btn">
+                                    <button>Hubungi</button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- HANDLE BAGIAN FOOTER -->
+      <footer>
+            <div class="row">
+                  <div class="footer-col">
+                        <h4>Sosial Media</h4>
+                        <div class="social-links" id="sosmed">
+                              <a href=""><i class="fab fa-facebook"></i></a>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                              <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Jelajahi</h4>
+                        <ul>
+                              <li><a href="">Tentang</a></li>
+                              <li><a href="">Hubungi Kami</a></li>
+                        </ul>
+                  </div>
+                  <div class="footer-col">
+                        <h4>Konten Edukasi</h4>
+                        <ul>
+                              <li><a href="">Pendidikan</a></li>
+                              <li><a href="">Politik</a></li>
+                              <li><a href="">Ekonomi</a></li>
+                              <li><a href="">Sosial</a></li>
+                              <li><a href="">Budaya</a></li>
+                              <li><a href="">Pertahanan & Keamanan</a></li>
+                        </ul>
+                  </div>
+            </div>
+      </footer>
+
+      <!-- SCRIPT FOR DETAIL PROFILE PAGE -->
+      <script>
+            // SCRIPT FOR DETAIL PROFILE
+            var showPageButton = document.getElementById('showPageButton');
+            var hiddenPage = document.getElementById('hiddenPage');
+            var closeButton = document.getElementById('closeButton');
+
+            showPageButton.addEventListener('click', function () {
+                  hiddenPage.classList.add('active');
+            });
+
+            closeButton.addEventListener('click', function () {
+                  hiddenPage.classList.remove('active')
+            });
+      </script>
+</body>
+
+</html>

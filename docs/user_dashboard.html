@@ -191,7 +191,7 @@
       <!-- KODE UNTUK HADNLE FORM REGISTRASI TOKO -->
       <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
-            title="Close Button">&times;</span>
+                  title="Close Button">&times;</span>
 
             <!-- code for form registration -->
             <form class="modal-content" action="/action_page.php">
@@ -205,7 +205,7 @@
 
                         <label for="product-name"><b>Nama Produk</b></label>
                         <input type="text" placeholder="Masukan Nama Produk" name="product-name" required>
-                        
+
                         <label for="price"><b>Harga Produk</b></label>
                         <input type="text" placeholder="Rp0 ,- /kg" name="price" required>
 
@@ -216,7 +216,7 @@
                         <div class="file-input">
                               <input type="file" id="fileInput" name="filename" class="add-photo">
                         </div>
-                       
+
                         <div class="save">
                               <button type="submit" class="savebtn">Simpan</button>
                         </div>
@@ -294,7 +294,7 @@
             var modal = document.getElementById('id01');
 
             // Jika user menekan apapun di luar form akan otomatis close
-            window.onclick = function(event) {
+            window.onclick = function (event) {
                   if (event.target == modal) {
                         modal.style.display = "none"
                   }

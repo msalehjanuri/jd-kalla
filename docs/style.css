@@ -464,88 +464,223 @@ footer {
 
 /* RESPONSIVE */
 
-/* responsive artikel-box */
-@media screen and (max-width: 50rem) {
-      .artikel-box {
-            display: flex;
-            height: 80vh;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-      }
+/* Pengaturan viewport untuk masing-masing ukuran device */
 
-      .slide {
-            width: 85vw;
-            border-radius: 8px;
+/* SMARTPHONE */
+@media (max-width: 768px) {
 
-      }
-
-      /* responsive news-box */
-      .news {
-            width: 350px;
-            margin: 0 10px;
-            /* flex-wrap: wrap; */
-            grid-column: span 2;
-      }
-}
-
-
-@media screen and (max-width:768px) {
-      nav {
-            flex-direction: initial;
-            margin: 0rem;
+      .nav-links li a {
+            font-size: 14px;
       }
 
       nav .logo {
-            margin-top: 2rem;
-            text-align: left;
-            width: 100%;
+            width: 10%;
       }
 
-      nav ul {
-            padding-inline-start: 0;
-            margin: 3rem;
-      }
-
-      h1 {
-            margin-top: 0px;
-      }
-
+      /* bagian slogan */
       .content-wrapper {
-            max-width: 100% !important;
-            margin-top: auto;
+            font-size: 12px;
+            margin-top: 20px;
       }
 
-      img {
-            width: 60%;
-            /* width: 100px; */
-            /* height: 200px; */
-            margin: 0 auto;
-            padding: 2rem 0 2rem 0;
+      /* bagian definisi dan visi */
+      .content {
+            grid-gap: 6px;
+            margin-right: 5px;
+            margin-left: 5px;
       }
 
-      /* responsive footer */
-      .footer-col {
-            width: 50%;
-            margin-bottom: 30px;
+      .content .definisi {
+            width: 100%;
+            padding-left: 6px;
+            padding-right: 6px;
       }
 
-      /* responsive nilai NgupaApp */
-      .nilai-box .nilai {
-            width: 50%;
-      }
-}
-
-
-@media screen and (min-width:100px) {
-      .contents {
-            padding-top: 6rem;
+      .definisi p {
+            font-size: 14px;
       }
 
-      /* responsive footer */
-      .footer-col {
+      .content .visi {
             width: 100%;
       }
+
+      .nilai-box {
+            justify-content: center;
+      }
+
+      .nilai-box .nilai {
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 14px;
+      }
+
+      .nilai-box .nilai img {
+            width: 80px;
+      }
+
+      /* bagian slider artikel-box */
+      .slide {
+            height: 25vh;
+            margin: 3px;
+      }
+
+      .slide a {
+            font-size: 14px;
+            bottom: 10px;
+      }
+
+      /* bagian news/event terbaru */
+      .news-box {
+            width: 178px;
+            height: auto;
+      }
+
+      .news-box img {
+            width: 100%;
+            height: 120px;
+      }
+
+      .news-body h4 {
+            font-size: 12px;
+      }
+
+      /* bagian join button */
+      .join-button {
+            margin-top: 2px;
+            margin-bottom: 80px;
+      }
+
+      /* bagian footer */
+      .footer-col {
+            padding: 0 10px;
+      }
+
+      .footer-col h4 {
+            font-size: 16px;
+      }
+
+      .footer-col ul li a {
+            font-size: 14px;
+      }
+
+      .footer-col .social-links a {
+            margin: 0 5px 5px 0;
+      }
+
 }
+
+/* TABLET */
+@media (min-width: 769px) and (max-width:1024px) {
+
+      /* bagian slogan */
+      .content-wrapper {
+            font-size: 24px;
+            margin-top: 20px;
+      }
+
+      /* bagian definisi dan visi */
+      h3 {
+            font-size: 26px;
+      }
+
+      .content .definisi {
+            width: 100%;
+      }
+
+      .content p {
+            font-size: 24px;
+      }
+
+      .content .visi {
+            width: 100%;
+      }
+
+      .nilai-box {
+            justify-content: center;
+
+      }
+
+      .nilai-box .nilai {
+            font-size: 24px;
+      }
+
+      .nilai-box .nilai img {
+            width: 160px;
+      }
+
+      .bg-overlay {
+            height: 30%;
+      }
+
+      /* bagian slider artikel-box */
+      .slide {
+            height: 30vh;
+            margin: 3px;
+      }
+
+      .slide a {
+            font-size: 30px;
+            bottom: 20px;
+      }
+
+      /* bagian news/event terbaru */
+      .news-box {
+            width: 400px;
+            height: auto;
+      }
+
+      .news-box img {
+            width: 100%;
+            height: 210px;
+      }
+
+      .news-body h4 {
+            font-size: 24px;
+      }
+
+      .news-body p {
+            font-size: 20px;
+      }
+
+      .tag {
+            font-size: 1.1rem;
+      }
+
+      /* bagian join button */
+      .join-button {
+            width: 55%;
+            padding: 30px;
+      }
+
+      .join-button a {
+            font-size: 25px;
+      }
+
+      /* bagian footer */
+      .footer-col {
+            padding: 0 15px;
+      }
+
+      .footer-col h4 {
+            font-size: 28px;
+      }
+
+      .footer-col h4::before {
+            width: 75px;
+      }
+
+      .footer-col ul li a {
+            font-size: 26px;
+      }
+
+      .footer-col .social-links a {
+            height: 40px;
+            width: 40px;
+            margin: 0 5px 8px 0;
+            line-height: 40px;
+      }
+
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {}

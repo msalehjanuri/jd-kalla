@@ -337,3 +337,102 @@ select {
 .social-container a:hover {
       border: 1.5px solid #4bb6b7;
 }
+
+
+/* Pengaturan viewport untuk masing-masing ukuran device */
+
+/* SMARTPHONE */
+@media (max-width: 768px) {
+
+      h1.title {
+            font-size: 24px;
+            line-height: 24px;
+      }
+
+      p {
+            font-size: 10.5px;
+            letter-spacing: normal;
+      }
+
+      span {
+            font-size: 12px;
+            margin-top: 12px;
+      }
+
+      .social-container {
+            margin: 20px 0;
+      }
+
+      .social-container a {
+            display: inline-flex;
+            margin: 2px;
+            width: 40px;
+            height: 40px;
+      }
+
+      button {
+            font-size: 12.5px;
+            padding: 6px 55px;
+      }
+
+      button:hover {
+            letter-spacing: 2px;
+      }
+
+      form {
+            padding: 0 10px;
+      }
+
+      input {
+            padding: 6px 9px;
+            margin: 2px 0;
+      }
+
+      .container {
+            min-height: 500px;
+      }
+
+      .content {
+            line-height: normal;
+      }
+
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width:1024px) {
+      h1.title {
+            font-size: 70px;
+            line-height: 70px;
+      }
+
+      p {
+            font-size: 16px;
+            line-height: 22px;
+            
+      }
+
+      button.ghost {
+            margin-top: 25px;
+            font-size: 20px;
+            padding: 8px 80px;
+      }
+
+      .register-container label,
+      .login-container label {
+            font-size: 18px;
+      }
+
+      button {
+            font-size: 20px;
+            padding: 10px 100px;
+      }
+
+      .social-container a {
+            font-size: 27px;
+            height: 70px;
+            width: 70px;
+      }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {}

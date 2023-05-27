@@ -122,8 +122,10 @@
       display: flex;
       justify-content: end;
       margin-top: 30px;
-      margin-bottom: 30px;
+      /* margin-bottom: 30px; */
+      margin-bottom: 65px;
       margin-right: 18px;
+      gap: 5px;
 }
 
 #message {
@@ -136,6 +138,10 @@
       padding-bottom: 5px;
       border-radius: 5px;
       cursor: pointer;
+}
+
+#message a {
+      color: rgba(0, 0, 0, 0.78);
 }
 
 /* PRODUK DI TOKO */
@@ -225,7 +231,8 @@ img {
       position: relative;
       background-color: #fff;
       width: 317.39px;
-      height: 443.48px;
+      /* height: 443.48px; */
+      height: 458px;
       border-radius: 15px;
       /* margin-top: 10px; */
       left: 50%;
@@ -248,8 +255,10 @@ h5 {
       display: flex;
       flex-wrap: wrap;
       background: linear-gradient(to bottom, rgba(8, 80, 120, 0.7), rgba(133, 216, 206, 0.7));
-      width: 291.3 px;
-      height: 349.57px;
+      /* width: 291.3 px;
+      height: 349.57px; */
+      width: 296px;
+      height: 365px;
       border-radius: 15px;
       margin: 3px 10px 10px 10px;
       padding: 14px 10px 10px 10px;
@@ -305,6 +314,90 @@ h5 {
 .close:focus {
       color: #f44336;
       cursor: pointer;
+}
+
+/* BAGIAN BUTTON STORE 2 */
+.outside2 {
+      position: relative;
+      background-color: #fff;
+      width: 317.39px;
+      height: 479.88px;
+      border-radius: 15px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+}
+
+.product-button .store2 {
+      justify-content: center;
+      width: 250px;
+
+}
+
+.button-store2 {
+      margin-top: 25px;
+      margin-left: 14px;      
+}
+
+.button-store2 button {
+      background-color: #3da8af;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      width: 140.7px;
+      height: 25.22px;
+      cursor: pointer;
+}
+
+#btn-up {
+      flex-basis: 50%;
+      justify-content: space-around;
+}
+
+#btn-down {
+      margin-top: 3px;
+      width: 94.5%;
+}
+
+input[type=number] {
+      width: 100%;
+      padding: 6px;
+      border: 1.4px solid #000;
+      border-radius: 10px;
+      text-align: center;
+      background-color: inherit;
+      color: #2E2C2C;
+      font-size: 13px;
+      margin-top: 12px;
+}
+
+input[type=number]:focus {
+      outline: none;
+}
+
+.button-store2 button:hover {
+      color: #fff;
+      background-color: rgba(8, 80, 120, 0.7);
+      transition: all 0.4s ease;
+}
+
+/* bagian keranjang belanjaan */
+#shopping-cart {
+      border: none;
+      background-color: #84dcf5e4;
+      font-size: 20px;
+      border-radius: 5px;
+}
+
+#shopping-cart a {
+      color: rgba(0, 0, 0, 0.8);
+}
+
+input[type=text] {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
 }
 
 /* BAGIAN FOOTER */

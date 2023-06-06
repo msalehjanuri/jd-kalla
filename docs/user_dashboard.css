@@ -876,6 +876,18 @@ footer {
             margin-right: 0px;
       }
 
+      ::-webkit-scrollbar {
+            width: 0;
+      }
+
+      ::-webkit-scrollbar-track {
+            background-color: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+            background-color: inherit;
+      }
+
       .news-box {
             width: 80%;
             height: 89vw;
@@ -923,7 +935,8 @@ footer {
             font-size: 13px;
       }
 
-      .prev, .next {
+      .prev,
+      .next {
             font-size: 15px;
       }
 

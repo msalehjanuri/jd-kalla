@@ -12,7 +12,9 @@
 </head>
 
 <body>
-      <nav class="navbar">
+      <!-- UNTUK MENGHANDLE NAVIGATION BAR -->
+      <!-- versi 1 -->
+      <!-- <nav class="navbar">
             <div class="navbar-container">
                   <div class="logo">
                         <a href="user_dashboard.html"><img src="image/logoapp2.png" alt="Logo"></a>
@@ -26,7 +28,7 @@
                               <li><a href="#fitur">Service</a></li>
                               <li class="dropdown">
                                     <a href="javascript:void(0)" class="dropbtn">Language</a>
-                                    <!-- <a class="fa fa-globe" id="icon"></a> -->
+                                    <a class="fa fa-globe" id="icon"></a>
                                     <div class="dropdown-menu">
                                           <a href="">Indonesia</a>
                                           <a href="">English</a>
@@ -41,21 +43,59 @@
                               <span class="bar"></span>
                         </button>
                         <button class="out-button" id="out">
-                              <span class="bar"><a href="index.html">Logout</a></span>
+                              <span class="bar"><a href="home.html">Logout</a></span>
                         </button>
                   </div>
+            </div>
+      </nav> -->
+
+      <!-- versi 2 -->
+      <nav>
+            <div class="logo">
+                  <a href=""><img src="image/logoapp2.png" alt="logoapp2"></a>
+            </div>
+
+            <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Service</a></li>
+                  <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Language</a>
+                        <!-- <a class="fa fa-globe" id="icon"></a> -->
+                        <div class="dropdown-menu">
+                              <a href="">Indonesia</a>
+                              <a href="">English</a>
+                        </div>
+                  </li>
+            </ul>
+
+            <div class="button-nav">
+                  <button class="profile-button" id="profile">
+                        <span class="bar">Rams (Pengusaha)</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                  </button>
+                  <button class="out-button" id="out">
+                        <span class="bar"><a href="home.html">Logout</a></span>
+                  </button>
+            </div>
+
+            <div class="menu-toggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
             </div>
       </nav>
 
       <p>Halo, <strong>John Doe!</strong></p>
-
       <!-- KODE UNTUK HANDLE SEARCH BAR ICON -->
       <div class="search-bar">
-            <input type="text" placeholder="Search here...">
-            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+
+            <input type="text" name="search" placeholder="Search here...">
             <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">
-                  <i class="fa fa-store"></i>
-            </button>
+                  <i class="fa fa-store"></i></button>
       </div>
 
       <!-- KODE UNTUK HANDLE TOP NEWS -->
@@ -66,6 +106,7 @@
       </div>
 
       <!-- KODE UNTUK HANDLE FITUR UTAMA -->
+      <!-- <h3>Fitur Utama</h3> -->
       <div class="fitur-utama" id="fitur">
             <h3>Fitur Utama</h3>
             <div class="image-row">
@@ -74,11 +115,11 @@
                         <div class="image-caption"><b>Membuat Toko</b></div>
                   </div>
                   <div class="image-item">
-                        <img src="image/Finance app_Isometric.png" alt="Gambar 2">
+                        <img src="image/Finance app_Isometric.png" alt="Harga">
                         <div class="image-caption"><b>Memantau Harga</b></div>
                   </div>
                   <div class="image-item">
-                        <img src="image/Factory Worker_Isometric.png" alt="Gambar 3">
+                        <img src="image/Factory Worker_Isometric.png" alt="Rekan">
                         <div class="image-caption"><b>Mencari Distributor</b></div>
                   </div>
             </div>
@@ -149,6 +190,8 @@
 
       <!-- KODE UNTUK HANDLE NEWS DALAM SLIDER -->
       <div class="slideshow">
+
+            <!-- Full-width slides -->
             <div class="slide">
                   <a
                         href="https://www.cnnindonesia.com/ekonomi/20220920151900-92-850325/india-larang-ekspor-beras-indonesia-dan-filipina-bakal-kena-imbas">
@@ -188,7 +231,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-      <!-- KODE UNTUK HADNLE FORM REGISTRASI TOKO -->
+      <!-- KODE UNTUK MENGHADNLE FORM REGISTRASI TOKO -->
       <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
                   title="Close Button">&times;</span>
@@ -197,6 +240,7 @@
             <form class="modal-content" action="/action_page.php">
                   <div class="container">
                         <h3>DAFTARKAN TOKO ANDA</h3>
+                        <!-- <hr> -->
                         <label for="store-name"><b>Nama Toko</b></label>
                         <input type="text" placeholder="Masukan Nama Toko" name="store-name" required>
 
@@ -220,11 +264,14 @@
                         <div class="save">
                               <button type="submit" class="savebtn">Simpan</button>
                         </div>
+                        <!-- <button type="submit" class="savebtn">Simpan</button> -->
+
                   </div>
             </form>
       </div>
 
       <!-- KODE UNTUK MENGHANDLE BAGIAN FOOTER -->
+
       <footer>
             <div class="row">
                   <div class="footer-col">
@@ -240,6 +287,8 @@
                         <h4>Jelajahi</h4>
                         <ul>
                               <li><a href="#about">Tentang</a></li>
+                              <!-- <li><a href="#">Kontak</a></li> -->
+                              <!-- <li><a href="#">Gratis Ongkir</a></li> -->
                               <li><a href="#">Hubungi Kami</a></li>
                         </ul>
                   </div>
@@ -258,47 +307,8 @@
       </footer>
 
 
-      <!-- BAGIAN HANDLE JAVASCRIPT -->
-      <script>
 
-            // SCRIPT FOR SLIDER
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                  showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                  showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                  var i;
-                  var slides = document.getElementsByClassName("slide");
-                  var dots = document.getElementsByClassName("dot");
-                  if (n > slides.length) { slideIndex = 1 }
-                  if (n < 1) { slideIndex = slides.length }
-                  for (i = 0; i < slides.length; i++) {
-                        slides[i].style.display = "none";
-                  }
-                  for (i = 0; i < dots.length; i++) {
-                        dots[i].className = dots[i].className.replace(" active", "");
-                  }
-                  slides[slideIndex - 1].style.display = "block";
-                  dots[slideIndex - 1].className += " active";
-            }
-
-            // SCRIPT POP-UP REGISTER FORM
-            // Get the modal
-            var modal = document.getElementById('id01');
-
-            // Jika user menekan apapun di luar form akan otomatis close
-            window.onclick = function (event) {
-                  if (event.target == modal) {
-                        modal.style.display = "none"
-                  }
-            }
+      <script src="user_dashboard.js">
       </script>
 
 </body>

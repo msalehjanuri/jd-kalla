@@ -13,7 +13,8 @@
 
 <body>
       <!-- UNTUK MENGHANDLE NAVIGATION BAR -->
-      <nav class="navbar">
+      <!-- versi 1 -->
+      <!-- <nav class="navbar">
             <div class="navbar-container">
                   <div class="logo">
                         <a href="user_dashboard.html"><img src="image/logoapp2.png" alt="Logo"></a>
@@ -27,7 +28,7 @@
                               <li><a href="#fitur">Service</a></li>
                               <li class="dropdown">
                                     <a href="javascript:void(0)" class="dropbtn">Language</a>
-                                    <!-- <a class="fa fa-globe" id="icon"></a> -->
+                                    <a class="fa fa-globe" id="icon"></a>
                                     <div class="dropdown-menu">
                                           <a href="">Indonesia</a>
                                           <a href="">English</a>
@@ -42,185 +43,230 @@
                               <span class="bar"></span>
                         </button>
                         <button class="out-button" id="out">
-                              <span class="bar"><a href="index.html">Logout</a></span>
+                              <span class="bar"><a href="home.html">Logout</a></span>
                         </button>
                   </div>
+            </div>
+      </nav> -->
+
+      <!-- versi 2 -->
+      <nav>
+            <div class="logo">
+                  <a href=""><img src="image/logoapp2.png" alt="logoapp2"></a>
+            </div>
+
+            <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Service</a></li>
+                  <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Language</a>
+                        <!-- <a class="fa fa-globe" id="icon"></a> -->
+                        <div class="dropdown-menu">
+                              <a href="">Indonesia</a>
+                              <a href="">English</a>
+                        </div>
+                  </li>
+            </ul>
+
+            <div class="button-nav">
+                  <button class="profile-button" id="profile">
+                        <span class="bar">Rams (Pengusaha)</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                  </button>
+                  <button class="out-button" id="out">
+                        <span class="bar"><a href="home.html">Logout</a></span>
+                  </button>
+            </div>
+
+            <div class="menu-toggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
             </div>
       </nav>
 
       <!-- UNTUK MESSAGE BUTTON -->
       <div class="message-button">
-            <button id="message"><a href=""></a><i class="fab fa-rocketchat"></i></button>
+            <button id="message"><a href="store2.html"><i class="fab fa-rocketchat"></i></a></i></button>
       </div>
 
 
       <!-- UNTUK MENGHANDLE BAGIAN PRODUK -->
       <div class="store-product">
+            <div class="product">
 
-            <!-- products in the first row -->
-            <!-- produk 1 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Tomat.jpg" alt="src:unplash-tomat" style="width: 100%;">
-                  <p class="product-name">Tomat</p>
-                  <p class="price">Rp2.500,- /kg</p>
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
+                  <!-- products in the first row -->
+                  <!-- produk 1 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Tomat.jpg" alt="src:unplash-tomat" style="width: 100%;">
+                        <p class="product-name">Tomat</p>
+                        <p class="price">Rp2.500,- /kg</p>
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 2 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Beras.jpg" alt="src:unplash-beras" style="width: 100%;">
+                        <p class="product-name">Beras</p>
+                        <p class="price">Rp13.250,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 3 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Udang Rebon.jpg" alt="src:unplash-udangrebon" style="width: 100%;">
+                        <p class="product-name">Udang Rebon</p>
+                        <p class="price">Rp40.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 4 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Tenggiri Kecil.jpg" alt="src:unplash-tenggirikecil"
+                              style="width: 100%;">
+                        <p class="product-name">Tenggiri Kecil 1kg</p>
+                        <p class="price">Rp70.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+            </div>
+
+            <div class="product">
+                  <!-- products in the second row -->
+                  <!-- produk 5 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Jagung Merah.jpg" alt="src:unplash-jagungmerah"
+                              style="width: 100%;">
+                        <p class="product-name">Jagung Merah</p>
+                        <p class="price">Rp5.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button id="showPageButton">Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 6 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Rumput Laut.jpg" alt="src:unplash-rumputlaut" style="width: 100%;">
+                        <p class="product-name">Rumput Laut</p>
+                        <p class="price">Rp4.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 7 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Jewawut.jpg" alt="src:unplash-jewawut" style="width: 100%;">
+                        <p class="product-name">Jewawut</p>
+                        <p class="price">Rp65.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
+                  </div>
+
+                  <!-- produk 8 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Kedelai.jpg" alt="src:unplash-kedelai" style="width: 100%;">
+                        <p class="product-name">Kedelai</p>
+                        <p class="price">Rp11.000,- /kg</p>
+
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
                   </div>
             </div>
 
-            <!-- produk 2 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Beras.jpg" alt="src:unplash-beras" style="width: 100%;">
-                  <p class="product-name">Beras</p>
-                  <p class="price">Rp13.250,- /kg</p>
+            <div class="product">
+                  <!-- products in the third row -->
+                  <!-- produk 9 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Ikan Tuna.jpg" alt="src:unplash-ikantuna" style="width: 100%;">
+                        <p class="product-name">Ikan Tuna</p>
+                        <p class="price">Rp20.000,- /kg</p>
 
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
                   </div>
-            </div>
 
-            <!-- produk 3 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Udang Rebon.jpg" alt="src:unplash-udangrebon" style="width: 100%;">
-                  <p class="product-name">Udang Rebon</p>
-                  <p class="price">Rp40.000,- /kg</p>
+                  <!-- produk 10 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Ikan Teri.jpg" alt="src:unplaash-ikanteri" style="width: 100%;">
+                        <p class="product-name">Ikan Teri</p>
+                        <p class="price">Rp80.000,- /kg</p>
 
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
                   </div>
-            </div>
 
-            <!-- produk 4 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Tenggiri Kecil.jpg" alt="src:unplash-tenggirikecil" style="width: 100%;">
-                  <p class="product-name">Tenggiri Kecil 1kg</p>
-                  <p class="price">Rp70.000,- /kg</p>
+                  <!-- produk 11 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Beras Merah.jpg" alt="src:unplash-berasmerah" style="width: 100%;">
+                        <p class="product-name">Beras Merah</p>
+                        <p class="price">Rp15.000,- /kg</p>
 
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
                   </div>
-            </div>
 
-            <!-- products in the second row -->
-            <!-- produk 5 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Jagung Merah.jpg" alt="src:unplash-jagungmerah" style="width: 100%;">
-                  <p class="product-name">Jagung Merah</p>
-                  <p class="price">Rp5.000,- /kg</p>
+                  <!-- produk 12 -->
+                  <div class="product-card">
+                        <img src="image/foto produk/Singkong.jpg" alt="src:unplash-singkong" style="width: 100%;">
+                        <p class="product-name">Singkong</p>
+                        <p class="price">Rp10.000,- /kg</p>
 
-                  <div class="product-button">
-                        <p><button id="showPageButton">Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 6 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Rumput Laut.jpg" alt="src:unplash-rumputlaut" style="width: 100%;">
-                  <p class="product-name">Rumput Laut</p>
-                  <p class="price">Rp4.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 7 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Jewawut.jpg" alt="src:unplash-jewawut" style="width: 100%;">
-                  <p class="product-name">Jewawut</p>
-                  <p class="price">Rp65.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 8 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Kedelai.jpg" alt="src:unplash-kedelai" style="width: 100%;">
-                  <p class="product-name">Kedelai</p>
-                  <p class="price">Rp11.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- products in the third row -->
-            <!-- produk 9 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Ikan Tuna.jpg" alt="src:unplash-ikantuna" style="width: 100%;">
-                  <p class="product-name">Ikan Tuna</p>
-                  <p class="price">Rp20.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 10 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Ikan Teri.jpg" alt="src:unplaash-ikanteri" style="width: 100%;">
-                  <p class="product-name">Ikan Teri</p>
-                  <p class="price">Rp80.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 11 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Beras Merah.jpg" alt="src:unplash-berasmerah" style="width: 100%;">
-                  <p class="product-name">Beras Merah</p>
-                  <p class="price">Rp15.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
-                  </div>
-            </div>
-
-            <!-- produk 12 -->
-            <div class="product-card">
-                  <img src="image/foto produk/Singkong.jpg" alt="src:unplash-singkong" style="width: 100%;">
-                  <p class="product-name">Singkong</p>
-                  <p class="price">Rp10.000,- /kg</p>
-
-                  <div class="product-button">
-                        <p><button>Detail</button></p>
-                        <p><button>Delete</button></p>
-                        <p><button>Update</button></p>
+                        <div class="product-button">
+                              <p><button>Detail</button></p>
+                              <p><button>Delete</button></p>
+                              <p><button>Update</button></p>
+                        </div>
                   </div>
             </div>
       </div>
 
-      <!-- UNTUK MENGHANDLE DETAIL PRODUK -->
-
       <div class="detail-product" id="hiddenPage">
-
-            <!-- CLOSE BUTTON -->
             <span class="close" id="closeButton">&times;</span>
             <div class="outside">
                   <h5>UD MAKMUR SEJAHTERA</h5>
@@ -298,22 +344,8 @@
       </footer>
 
       <!-- JAVASCRIPT -->
-      <script>
-            // SCRIPT FOR DETAIL PAGE
-            var showPageButton = document.getElementById('showPageButton');
-            var hiddenPage = document.getElementById('hiddenPage');
-            var closeButton = document.getElementById('closeButton');
-
-
-            showPageButton.addEventListener('click', function () {
-                  hiddenPage.classList.add('active');
-            });
-
-            closeButton.addEventListener('click', function () {
-                  hiddenPage.classList.remove('active')
-            });
+      <script src="store.js">
       </script>
-
 </body>
 
 </html>

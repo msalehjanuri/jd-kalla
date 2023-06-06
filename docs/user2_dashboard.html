@@ -7,12 +7,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" type="image/x-icon" href="image/logoapp2.png">
       <title>User Dashboard | NgupaApp</title>
-      <link rel="stylesheet" href="user2_dashboard.css" />
+      <link rel="stylesheet" href="user2.dashboard.css" />
       <script src="fontawesome/all.js"></script>
 </head>
 
 <body>
-      <nav class="navbar">
+      <!-- UNTUK MENGHANDLE NAVIGATION BAR -->
+      <!-- versi 1 -->
+      <!-- <nav class="navbar">
             <div class="navbar-container">
                   <div class="logo">
                         <a href="user2_dashboard.html"><img src="image/logoapp2.png" alt="logo"></a>
@@ -41,6 +43,46 @@
                               <span class="bar"><a href="home.html">Logout</a></span>
                         </button>
                   </div>
+            </div>
+      </nav> -->
+
+      <!-- versi 2 -->
+      <nav>
+            <div class="logo">
+                  <a href=""><img src="image/logoapp2.png" alt="logoapp2"></a>
+            </div>
+
+            <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Service</a></li>
+                  <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Language</a>
+                        <!-- <a class="fa fa-globe" id="icon"></a> -->
+                        <div class="dropdown-menu">
+                              <a href="">Indonesia</a>
+                              <a href="">English</a>
+                        </div>
+                  </li>
+            </ul>
+
+            <div class="button-nav">
+                  <button class="profile-button" id="profile">
+                        <span class="bar">Rams (Pengusaha)</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                  </button>
+                  <button class="out-button" id="out">
+                        <span class="bar"><a href="home.html">Logout</a></span>
+                  </button>
+            </div>
+
+            <div class="menu-toggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
             </div>
       </nav>
 
@@ -84,11 +126,10 @@
 
             <!-- user 1 -->
             <div class="profil-card" id="showPageButton">
-                  <!-- <div class="card1"> -->
                   <img src="image/foto user/djaja.jpg" alt="">
-                  <!-- </div> -->
                   <div class="card2">
                         <p>Djaja</p>
+                        <!-- <hr> -->
                         <p>Petani</p>
                         <p>UD MAKMUR SEJAHTERA</p>
                   </div>
@@ -247,48 +288,33 @@
 
             <div class="outside">
                   <div class="inside">
-                        <img src="image/foto user/djaja.jpg" alt="" class="front-image" id="id01">
-                        <img src="image/agri2.jpg" alt="background" class="back-image">
-                        <!-- <hr> -->
-                        <div class="inside1">
-                              <table>
-                                    <!-- <tr>
-                                          <th></th>
-                                          <th></th>
-                                          <th></th>
-                                    </tr> -->
-                                    <tr>
-                                          <td>Nama</td>
-                                          <td>:</td>
-                                          <td>Andi Widjaja</td>
-                                    </tr>
-                                    <tr>
-                                          <td>Role</td>
-                                          <td>:</td>
-                                          <td>Petani</td>
-                                    </tr>
-                                    <tr>
-                                          <td>Toko</td>
-                                          <td>:</td>
-                                          <td>UD MAKMUR SEJAHTERA</td>
-                                    </tr>
-                                    <tr>
-                                          <td>No. HP</td>
-                                          <td>:</td>
-                                          <td>081234567890</td>
-                                    </tr>
-                                    <tr>
-                                          <td>Alamat</td>
-                                          <td>:</td>
-                                          <td>Jl. Rajawali Rt/Rw. 01/01, Bojong Asmat, Rawamangun, Sumedang - Jawa Barat
-                                          </td>
-                                    </tr>
-                              </table>
 
-                              <div class="call-btn">
-                                    <button>Hubungi</button>
-                              </div>
+                        <div class="bg-image">
+                              <img class="bg" src="image/agri3.jpg" alt="agri3">
                         </div>
+                        <div class="profile-pict"></div>
+                        <br>
+                        <hr>
+                        <p class="field-column">
+                              Nama&nbsp;&nbsp; :<br>
+                              Role&nbsp;&nbsp;&nbsp;&nbsp; :<br>
+                              Toko&nbsp;&nbsp;&nbsp;&nbsp; :<br>
+                              No. Hp :<br>
+                              Alamat :<br>
+                        </p>
+                        <p class="value-column">
+                              Andi Widjaja<br>
+                              Petani<br>
+                              UD MAKMUR SEJAHTERA<br>
+                              081234567890<br>
+                              Jl. Rajawali Rt/Rw. 01/01, Bojong Asmat, Rawamangun,
+                              Sumedang - Jawa Barat
+                        </p>
+
+                        <div class="call-btn">
+                              <button>Hubungi</button>
+                        </div>
+
                   </div>
             </div>
       </div>
@@ -327,19 +353,7 @@
       </footer>
 
       <!-- SCRIPT FOR DETAIL PROFILE PAGE -->
-      <script>
-            // SCRIPT FOR DETAIL PROFILE
-            var showPageButton = document.getElementById('showPageButton');
-            var hiddenPage = document.getElementById('hiddenPage');
-            var closeButton = document.getElementById('closeButton');
-
-            showPageButton.addEventListener('click', function () {
-                  hiddenPage.classList.add('active');
-            });
-
-            closeButton.addEventListener('click', function () {
-                  hiddenPage.classList.remove('active')
-            });
+      <script src="user2_dashboard.js">
       </script>
 </body>
 

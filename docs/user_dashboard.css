@@ -12,133 +12,19 @@ body {
       font-family: Arial, Helvetica, sans-serif;
 }
 
-/* KODE UNTUK HANDLE NAVIGATION BAR */
-/* versi 1 */
-/* .navbar {
-      background-color: #70ccea38;
-      padding: 10px;
-      margin: 0;
-}
-
-.navbar-container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-}
-
-.logo img {
-      height: 50px;
-}
-
-.button {
-      margin-left: 15px;
-}
-
-#profile {
-      border: none;
-      background-color: #84dcf5e4;
-      cursor: pointer;
-      padding: 5px;
-      margin-right: 3px;
-      border-radius: 18px;
-      font-weight: 600;
-      color: #000000;
-}
-
-#out {
-      border: none;
-      background-color: #ff3939;
-      box-shadow: 1px 1px 1px 1px rgba(72, 70, 70, 0.998);
-      cursor: pointer;
-      padding: 5px;
-      margin-right: 3px;
-      border-radius: 18px;
-      font-weight: 600;
-      color: #fff;
-
-}
-
-#out a {
-      text-decoration: none;
-      padding: 3px;
-      color: #000000;
-
-}
-
-#out:hover {
-      background-color: #e81e1e;
-      transition: all 0.5s ease-in-out;
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
-}
-
-.menu {
-      margin-left: auto;
-}
-
-.menu li {
-      display: inline-block;
-      position: relative;
-}
-
-.menu li:hover>.dropdown-menu {
-      display: block;
-}
-
-.menu ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-}
-
-.menu ul li {
-      margin-right: 10px;
-
-}
-
-.menu ul li a {
-      text-decoration: none;
-      color: #000000;
-}
-
-.menu ul li a:hover, #icon:hover {
-      color: #84dcf5e4;
-      transition: all 0.5s ease;
-}
-
-.dropbtn {
-      color: #70ccea38;
-      text-align: center;
-}
-
-.dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      border-radius: 12px;
-      list-style: none;
-      padding: 10px 10px;
-      z-index: 1;
-}
-#icon {
-      color: #fff;
-      cursor: pointer;
-} */
-
-/* versi 2 */
+/* HANDLE BAGIAN NAVIGASI BAR */
 nav {
       display: flex;
       justify-content: space-around;
       background-color: #bceaf9;
       box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.311);
-      padding: 4.5px 0;
+      padding: 4.5px0;
       align-items: center;
 }
 
 nav ul {
       display: flex;
-      list-style: none;
+      list-style-type: none;
 }
 
 nav ul li a {
@@ -157,7 +43,7 @@ nav ul li a:hover {
       width: 65%;
 }
 
-/* Vertikal/Hamburger Menu */
+/* vertikal/hamburher menu */
 .menu-toggle {
       display: none;
       flex-direction: column;
@@ -186,10 +72,9 @@ nav ul li a:hover {
       transition: all 0.5s;
 }
 
-/* Vertikal/Hamburger Menu Animation */
+/* vertikal/hamburger menu animation */
 .menu-toggle span:nth-child(2) {
       transform-origin: 0 0;
-
 }
 
 .menu-toggle input:checked~span:nth-child(2) {
@@ -198,7 +83,6 @@ nav ul li a:hover {
 
 .menu-toggle span:nth-child(4) {
       transform-origin: 0 100%;
-
 }
 
 .menu-toggle input:checked~span:nth-child(4) {
@@ -209,7 +93,7 @@ nav ul li a:hover {
       transform: scale(0);
 }
 
-/* bagian dropdown-menu */
+/* bagian dropdown menu */
 nav li:hover>.dropdown-menu {
       display: flex;
       flex-direction: column;
@@ -225,7 +109,6 @@ nav li:hover>.dropdown-menu {
       padding: 2px;
       padding-left: 15px;
       padding-right: 15px;
-
 }
 
 .dropdown-menu a:hover {
@@ -246,7 +129,6 @@ button {
 }
 
 #profile {
-      /* border: none; */
       background-color: #84dcf5e4;
       padding: 5px;
       border-radius: 18px;
@@ -254,7 +136,6 @@ button {
 }
 
 #out {
-      /* border: none; */
       background-color: #ff3939;
       box-shadow: 1px 1px 1px 1px rgba(72, 70, 70, 0.998);
       padding: 5px;
@@ -273,14 +154,14 @@ button {
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
 }
 
-/* KODE UNTUK HANDLE NAMA USER */
+/* HANDLE BAGIAN NAMA USER */
 p {
       padding-top: 20px;
       padding-left: 12px;
       font-size: 18px;
 }
 
-/* KODE UNTK HANDLE SEARCH BAR ICON */
+/* HANDLE BAGIAN SEARCH BAR ICON */
 .search-bar {
       display: flex;
       align-items: center;
@@ -296,14 +177,9 @@ p {
       margin-left: 5px;
 }
 
-/* .search-bar input[type=text]:focus {
-      width: 100%;
-} */
-
 .search-bar button {
       padding: 9px 10px;
       background-color: #ace0f9;
-      /* background: linear-gradient(to top, rgb(172, 224, 249), rgba(255, 241, 235, 0)); */
       border: none;
       border-radius: 4px;
       margin-left: 8px;
@@ -323,13 +199,12 @@ p {
 .image-container {
       position: relative;
       display: inline-block;
-      margin-top: 290px;
+      margin-top: 270px;
       border-radius: 12px;
       box-shadow: 0.2px 1px 1px 2px rgba(72, 70, 70, 0.358);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-
 }
 
 .image-container img {
@@ -349,7 +224,7 @@ p {
       padding: 1.1px;
 }
 
-/* KODE UNTUK HANDLE FITUR UTAMA */
+/* BAGIAN FITUR UTAMA */
 .fitur-utama {
       margin-left: 20px;
       margin-right: 20px;
@@ -364,7 +239,6 @@ p {
       justify-content: space-between;
       margin-left: 20px;
       margin-bottom: 170px;
-
 }
 
 .image-item {
@@ -379,19 +253,27 @@ p {
       height: auto;
 }
 
-/* .image-caption {
-      margin-top: 10px;
-} */
-
-/* KODE UNTUK HANDLE BAGIAN NEWS */
+/* BAGIAN NEWS */
 .news {
-      margin-top: 50px;
       margin-left: 20px;
       margin-right: 20px;
       margin-bottom: 50px;
       display: flex;
       gap: 20px;
       border-radius: 8px;
+}
+
+/* untuk hapus ikon scrollbar */
+::-webkit-scrollbar {
+      width: 0;
+}
+
+::-webkit-scrollbar-track {
+      background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+      background-color: inherit;
 }
 
 .news-box {
@@ -444,7 +326,7 @@ p {
       text-align: justify;
 }
 
-/* KODE UNTUK HANDLE NEWS DALAM SLIDER */
+/* BAGIAN NEWS DALAM SLIDER */
 /* css code for slideshow */
 .slideshow {
       position: relative;
@@ -488,7 +370,6 @@ p {
       }
 }
 
-
 /* css code for prev and next button */
 .prev,
 .next {
@@ -515,7 +396,6 @@ p {
 /* code css for on hover */
 .prev:hover,
 .next:hover {
-      /* background-color: rgba(0,0,0,0.8); */
       color: white;
 }
 
@@ -523,7 +403,6 @@ p {
 .dot-icon {
       text-align: center;
       padding: 20px;
-      /* background: #a79921; */
 }
 
 .dot {
@@ -573,10 +452,6 @@ h3 {
       text-align: center;
       padding-bottom: 20px;
 }
-
-/* .b {
-      text-align: center;
-} */
 
 .modal {
       display: none;
@@ -709,8 +584,8 @@ footer {
 }
 
 /* .footer-col ul li:not(:last-child) {
-      margin-bottom: 10px;
-      flex-direction: column;
+  margin-bottom: 10px;
+  flex-direction: column;
 } */
 
 .footer-col ul li a {
@@ -749,8 +624,8 @@ footer {
 
 
 
-/* RESPONSIVE */
 
+/* RESPONSIVE */
 /* Pengaturan viewport untuk masing-masing ukuran device */
 
 /* SMARTPHONE */
@@ -761,41 +636,56 @@ footer {
             position: absolute;
             right: 0;
             top: 0;
-            height: 115vh;
+            height: 48vh;
             flex-direction: column;
-            margin-top: 61px;
-            z-index: 1;
-            align-items: center;
+            margin-top: 52px;
             background-color: #bceaf9;
+            border-radius: 0 0 15px 15px;
             transform: translateY(-100%);
             transition: all 1s;
             opacity: 0;
       }
 
-      nav ul.slide {
+      nav ul.show {
             opacity: 1;
-            z-index: 1;
+            transform: translateX(0);
       }
 
       nav ul li {
             padding-top: 15px;
+            padding-left: 5px;
+      }
+
+      nav ul li:hover {
+            background-color: #fff;
+            width: 100%;
+            padding: 10px;
+      }
+
+      nav ul li a:hover {
+            color: #000;
+      }
+
+      .dropdown:hover,
+      .dropdown-menu:hover {
+            background-color: #fff;
+      }
+
+      .dropdown-menu a:hover {
+            background-color: #70ccea90;
       }
 
       .menu-toggle {
             display: flex;
-            flex-direction: column;
-            position: relative;
-            justify-content: space-between;
       }
 
       /* bagian button */
       .button-nav {
-            /* display: flex; */
+            display: flex;
             position: absolute;
-            bottom: 2%;
-            right: 22%;
+            bottom: 46%;
             flex-direction: column;
-            z-index: 1;
+            z-index: -1;
             opacity: 0;
             transform: translateY(-100%);
             transition: all 1s;
@@ -805,18 +695,13 @@ footer {
             margin-bottom: 4px;
       }
 
-      .button-nav.slide {
+      .button-nav.show {
             opacity: 1;
             transform: translateX(0);
             z-index: 1;
       }
 
-
-      /* bagian news-box */
-      .news-box {
-            height: 600px;
-      }
-
+      /* bagian form registrasi toko */
       .savebtn {
             width: 100%;
       }
@@ -834,6 +719,7 @@ footer {
       .image-container {
             margin-top: 80px;
             width: 95%;
+            z-index: -1;
       }
 
       .image-container img {
@@ -876,21 +762,9 @@ footer {
             margin-right: 0px;
       }
 
-      ::-webkit-scrollbar {
-            width: 0;
-      }
-
-      ::-webkit-scrollbar-track {
-            background-color: transparent;
-      }
-
-      ::-webkit-scrollbar-thumb {
-            background-color: inherit;
-      }
-
       .news-box {
             width: 80%;
-            height: 89vw;
+            height: 30vh;
             display: inline-block;
             margin-top: 5px;
             margin-left: 10px;
@@ -899,7 +773,7 @@ footer {
 
       .news-box img {
             width: 100%;
-            height: 40%;
+            height: 50%;
       }
 
       .tag {
@@ -907,7 +781,7 @@ footer {
       }
 
       .news-body {
-            white-space: wrap;
+            white-space: pre-line;
       }
 
       .news-body h4 {
@@ -915,6 +789,7 @@ footer {
       }
 
       .news-body p {
+            display: none;
             font-size: 15px;
       }
 
@@ -947,7 +822,7 @@ footer {
 }
 
 /* TABLET */
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
       nav ul {
             width: 100%;
       }
@@ -955,5 +830,4 @@ footer {
       nav .button-nav {
             gap: 4px;
       }
-
 }

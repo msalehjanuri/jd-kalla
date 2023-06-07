@@ -44,6 +44,6 @@ const nav = document.querySelector('nav ul');
 const button = document.querySelector('.button-nav');
 
 menuToggle.addEventListener('click', function () {
-      nav.classList.toggle('slide');
-      button.classList.toggle('slide');
+      nav.classList.toggle('show');
+      button.classList.toggle('show');
 });

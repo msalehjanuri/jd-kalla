@@ -12,44 +12,8 @@
 </head>
 
 <body>
-      <!-- UNTUK MENGHANDLE NAVIGATION BAR -->
-      <!-- versi 1 -->
-      <!-- <nav class="navbar">
-            <div class="navbar-container">
-                  <div class="logo">
-                        <a href="user_dashboard.html"><img src="image/logoapp2.png" alt="Logo"></a>
-                  </div>
 
-                  <div class="menu">
-                        <ul>
-                              <li><a href="#">About Us</a></li>
-                              <li><a href="#">News</a></li>
-                              <li><a href="#">Contact</a></li>
-                              <li><a href="#fitur">Service</a></li>
-                              <li class="dropdown">
-                                    <a href="javascript:void(0)" class="dropbtn">Language</a>
-                                    <a class="fa fa-globe" id="icon"></a>
-                                    <div class="dropdown-menu">
-                                          <a href="">Indonesia</a>
-                                          <a href="">English</a>
-                                    </div>
-                              </li>
-                        </ul>
-                  </div>
-                  <div class="button">
-                        <button class="profile-button" id="profile">
-                              <span class="bar">John (Petani)</span>
-                              <span class="bar"></span>
-                              <span class="bar"></span>
-                        </button>
-                        <button class="out-button" id="out">
-                              <span class="bar"><a href="home.html">Logout</a></span>
-                        </button>
-                  </div>
-            </div>
-      </nav> -->
-
-      <!-- versi 2 -->
+      <!-- HANDLE BAGIAN NAVIGASI BAR -->
       <nav>
             <div class="logo">
                   <a href=""><img src="image/logoapp2.png" alt="logoapp2"></a>
@@ -62,7 +26,6 @@
                   <li><a href="">Service</a></li>
                   <li class="dropdown">
                         <a href="javascript:void(0)" class="dropbtn">Language</a>
-                        <!-- <a class="fa fa-globe" id="icon"></a> -->
                         <div class="dropdown-menu">
                               <a href="">Indonesia</a>
                               <a href="">English</a>
@@ -73,16 +36,14 @@
             <div class="button-nav">
                   <button class="profile-button" id="profile">
                         <span class="bar">Rams (Pengusaha)</span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
                   </button>
                   <button class="out-button" id="out">
-                        <span class="bar"><a href="home.html">Logout</a></span>
+                        <span class="bar"><a href="">Logout</a></span>
                   </button>
             </div>
 
             <div class="menu-toggle">
-                  <input type="checkbox" />
+                  <input type="checkbox">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -90,22 +51,23 @@
       </nav>
 
       <p>Halo, <strong>John Doe!</strong></p>
-      <!-- KODE UNTUK HANDLE SEARCH BAR ICON -->
-      <div class="search-bar">
 
+      <!-- HANDLE BAGIAN SEARCH BAR ICON -->
+      <div class="search-bar">
             <input type="text" name="search" placeholder="Search here...">
             <button onclick="document.getElementById('id01').style.display='block'" style="width: auto;">
-                  <i class="fa fa-store"></i></button>
+                  <i class="fa fa-store"></i>
+            </button>
       </div>
 
-      <!-- KODE UNTUK HANDLE TOP NEWS -->
+      <!-- HANDLE BAGIAN TOP NEWS -->
       <div class="image-container">
             <img src="https://petanionline.id/wp-content/uploads/2019/07/Trans-Oldpetani.png" alt="Gambar">
             <a href="https://www.kominfo.go.id/content/detail/11570/kominfo-target-1-juta-nelayan-dan-petani-go-online/0/sorotan_media"
                   class="overlay-link">KOMINFO: Petani dan Nelayan Go Online</a>
       </div>
 
-      <!-- KODE UNTUK HANDLE FITUR UTAMA -->
+      <!-- HANDLE BAGIAN FITUR UTAMA -->
       <!-- <h3>Fitur Utama</h3> -->
       <div class="fitur-utama" id="fitur">
             <h3>Fitur Utama</h3>
@@ -125,7 +87,7 @@
             </div>
       </div>
 
-      <!-- KODE UNTUK HANDLE NEWS -->
+      <!-- HANDLE BAGIAN NEWS -->
       <div class="news" id="artikel">
             <div class="news-box">
                   <a
@@ -188,7 +150,7 @@
             </div>
       </div>
 
-      <!-- KODE UNTUK HANDLE NEWS DALAM SLIDER -->
+      <!-- HANDLE BAGIAN NEWS DALAM SLIDER -->
       <div class="slideshow">
 
             <!-- Full-width slides -->
@@ -231,7 +193,7 @@
             <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
-      <!-- KODE UNTUK MENGHADNLE FORM REGISTRASI TOKO -->
+      <!-- HADNLE BAGIAN FORM REGISTRASI TOKO -->
       <div id="id01" class="modal">
             <span onclick="document.getElementById('id01').style.display='none'" class="close"
                   title="Close Button">&times;</span>
@@ -270,8 +232,7 @@
             </form>
       </div>
 
-      <!-- KODE UNTUK MENGHANDLE BAGIAN FOOTER -->
-
+      <!-- HANDLE BAGIAN FOOTER -->
       <footer>
             <div class="row">
                   <div class="footer-col">
@@ -306,11 +267,7 @@
             </div>
       </footer>
 
-
-
-      <script src="user_dashboard.js">
-      </script>
-
+      <script src="user_dashboard.js"></script>
 </body>
 
 </html>

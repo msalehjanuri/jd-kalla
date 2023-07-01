@@ -1,7 +1,13 @@
-*,
-::before,
-::after {
-      box-sizing: border-box;
+:root {
+      --primary: #bceaf9;
+      --bg: #baeaf999;
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      outline: none;
 }
 
 html {
@@ -9,682 +15,686 @@ html {
 }
 
 body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
 }
 
-/* NAVIGATION BAR */
 nav {
-      top: 0;
-      right: 0;
-      z-index: 9999;
-      width: 100%;
-      background-color: #70ccea38;
-      height: 55px;
       display: flex;
-      align-items: center;
       justify-content: space-around;
-      margin-top: 0rem;
-      color: #fff;
+      background-color: #bceaf9;
+      box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.311);
+      padding: 4.5px 0;
+      align-items: center;
 }
 
-nav .logo {
-      font-size: 1.rem;
-      width: 30%;
-}
-
-nav .logo img {
-      padding-top: 15px;
-      width: 130px;
-}
-
-.nav-links {
-      list-style-type: none;
+nav ul {
       display: flex;
-}
-
-.nav-links li a {
-      color: inherit;
-      margin-left: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-}
-
-.nav-links a:hover {
-      color: #95e8ff65;
-}
-
-.nav-links .btn:hover {
-      background-color: #95e8ff00;
-      color: #95e8ff;
-}
-
-li a,
-.dropbtn {
-      display: inline-block;
-      color: rgb(255, 255, 255);
-      text-align: center;
-      text-decoration: none;
-}
-
-li a:hover,
-.dropdown:hover .dropbtn {
-      transition: all 0.5s ease;
-}
-
-li.dropdown {
-      display: inline-block;
-}
-
-.dropdown-content {
-      display: none;
-      position: absolute;
+      list-style: none;
       z-index: 1;
+}
+
+nav ul li a {
+      text-decoration: none;
+      font-size: 0.9em;
+      color: #000;
+      padding: 6px;
+}
+
+nav ul li a:hover {
+      color: #84dcf5e4;
+      transition: all 0.5s;
+}
+
+.logo img {
+      width: 65%;
+}
+
+/* bagian dropdown menu */
+nav li:hover>.dropdown-menu {
+      display: flex;
+      flex-direction: column;
+}
+
+.dropdown-menu {
+      position: absolute;
+      display: none;
       padding: 10px 10px;
 }
 
-.dropdown-content a {
-      text-decoration: none;
-      display: block;
-      text-align: left;
+.dropdown-menu a {
+      padding: 2px;
+      padding-left: 15px;
+      padding-right: 15px;
 }
 
-.dropdown-content a:hover {
-      color: #95e8ff;
+.dropdown-menu a:hover {
+      background-color: #70ccea9f;
+      color: #000;
+      transition: all 1s;
+      border-radius: 6px;
 }
 
-.dropdown:hover .dropdown-content {
-      display: block;
-}
-
-/* DEFINISI & KEUNGGULAN APLIKASI */
-.content {
-      margin: 8px;
-      margin-top: 8.8vh;
-      display: flex;
-      flex-direction: column;
-      grid-gap: 10px;
-}
-
-.content .definisi {
-      width: 50%;
-      text-align: justify;
-      background-color: #95e8ff65;
-      border-radius: 8px;
-      padding-right: 10px;
-      padding-left: 10px;
-}
-
-.definisi p {
-      font-family: NunitoSansBold, sans-serif;
-      color: #535961;
-      font-size: 16px;
-}
-
-.content .visi {
-      width: 50%;
-      background-color: #95e8ff65;
-      border-radius: 8px;
-      padding-right: 10px;
-      padding-left: 10px;
-
-
-}
-
-.nilai-box {
-      display: flex;
-      flex-wrap: nowrap;
-}
-
-.nilai-box .nilai {
-      justify-content: center;
-      margin-left: 40px;
-      margin-right: 30px;
-      text-align: center;
-      font-size: 18px;
-      font-weight: 550;
-      color: #535961;
-      font-family: NunitoSansBold, sans-serif;
-      border-radius: 8px;
-}
-
-.nilai-box .nilai img {
-      width: 100px;
-      height: auto;
-      margin: 10px;
-}
-
-@media screen and (min-width: 700px) {
-      .content {
-            flex-direction: row;
-      }
-
-      .nilai-box .nilai {
-            flex-direction: row;
-      }
-}
-
-/* BACKGROUND & MOTTO */
-.content-wrapper {
-      display: flex;
-      flex-direction: row;
-      grid-gap: 10px;
-      position: static;
-      justify-content: center;
-      margin-top: 100px;
-      font-size: 20px;
-      font-family: Brush script MT;
-      text-align: center;
-}
-
-.upper {
-      color: #95E8FF;
-}
-
-.lower {
-      color: #ECFFF0;
-      font-weight: lighter;
-}
-
-
-.bg-overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      height: 50%;
-      z-index: -1;
-      background-image: url(image/agri6.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-}
-
-.btn {
+/* bagian button */
+button {
       border: none;
-      padding: 3px 6px;
-      margin-left: 50px;
-      font-weight: 600;
-      color: #fff;
-      background-color: #84dcf5e4;
-      text-align: center;
       cursor: pointer;
-      border-radius: 10px;
 }
 
-/* SLIDER ARTIKEL-BOX */
-.artikel-box {
-      overflow: hidden;
+.button-nav {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5vh;
+      gap: 4px;
 }
 
-.slide {
-      height: 45vh;
-      border-radius: 8px;
-      margin: 5px;
+/* profile button */
+#profile {
+      background-color: #84dcf5e4;
+      padding: 5px;
+      border-radius: 18px;
+      font-weight: 600;
+}
+
+#out {
+      background-color: #ff3939;
+      box-shadow: 1px 1px 1px 1px rgba(72, 70, 70, 0.998);
+      padding: 5px;
+      border-radius: 18px;
+      font-weight: 600;
+}
+
+#out a {
+      text-decoration: none;
+      color: #000;
+}
+
+#out:hover {
+      background-color: #e81e13;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
+      transition: all 0.5s;
+}
+
+/* vertikal/hamburger menu */
+.menu-toggle {
+      position: relative;
+      display: none;
+      flex-direction: column;
+      height: 20px;
+      justify-content: space-between;
+}
+
+.menu-toggle input {
+      position: absolute;
+      width: 40px;
+      height: 20px;
+      opacity: 0;
+      left: -5px;
+      top: -1px;
       cursor: pointer;
-      color: #fff;
-      flex: 1;
+      z-index: 2;
+}
+
+.menu-toggle span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      background-color: #000;
+      border-radius: 3px;
+      transition: all 0.5s;
+}
+
+/* vertikal/hamburger menu animation */
+.menu-toggle span:nth-child(2) {
+      transform-origin: 0 0;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+      transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle span:nth-child(4) {
+      transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+      transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+      transform: scale(0);
+}
+
+/* bagian hero section */
+.hero {
+      position: relative;
+      min-height: 100vh;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      background-image: url('image/agri7.jpg');
+      background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-repeat: no repeat;
-      position: relative;
-      transition: all 0.7s ease-in-out;
-      filter: blur(1.5px);
+      /* border-bottom: 1px solid rgb(26, 145, 13); */
+      /* z-index: -1; */
 }
 
-.slide a {
+.hero::after {
+      content: '';
+      display: block;
       position: absolute;
-      font-size: 22px;
-      font-weight: bold;
-      bottom: 20px;
-      left: 20px;
-      opacity: 0;
-      background-color: #e3fdf5;
-      background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
+      width: 100%;
+      /* height: 100%; */
+      /* background: linear-gradient(0deg, rgba(188, 234, 249, 0.3), rgba(255, 255, 255,0.3)); */
+      /* color: rgb(255, 255, 255); */
+}
+
+.hero .content {
+      padding: 1.4rem 7%;
+      max-width: 60rem;
 
 }
 
-.slide.active {
-      flex: 10;
-      filter: blur(0px);
+.hero .content h1 {
+      font-size: 5em;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      line-height: 1.2;
 }
 
-.slide.active a {
-      opacity: 1;
-      transition: opacity 0.3s ease-in 0.4s;
+.hero .content h1 span {
+      color: var(--primary);
 }
 
+.hero .content p {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+      line-height: 1.4;
+      font-weight: 100;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      /* mix-blend-mode: difference; */
+}
 
-/* NEWS/EVENT TERBARU */
-.news {
-      margin-top: 1vh;
-      margin-bottom: 1.5rem;
+.hero .content .cta {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.4rem;
+      color: #3f3f3f;
+      background-color: var(--primary);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.3);
+}
+
+/* Bagian About section */
+.about,
+.fitur,
+.value,
+.contact {
+      padding: 5rem 1.4rem;
+}
+
+.about h2,
+.fitur h2,
+/* .value, */
+.contact h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 3rem;
+}
+
+.about h2 span,
+.fitur h2 span,
+.value span,
+.contact h2 span {
+      color: var(--primary);
+}
+
+.about .row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      border-radius: 8px;
-      padding-left: 5px;
-
+      padding: 0rem;
 }
 
-.news-box {
+.about .row .about-img {
+      flex: 1 1 35rem;
+}
+
+.about .row .about-img img {
+      width: 65%;
+      /* height: 70%; */
+      padding-left: 4rem;
+}
+
+.about .row .content {
+      flex: 1 1 40rem;
+      /* padding: 1rem 1rem; */
+}
+
+.about .row .content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+}
+
+.about .row .content p {
+      text-align: justify;
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 1.6;
+}
+
+/* Fitur Section */
+.fitur {
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 183, 166, 0.4), rgba(151, 54, 187, 0.4), rgba(74, 164, 232, 0.4), rgba(255, 255, 255, 0.4));
+}
+
+.fitur h2,
+.contact h2 {
+      margin-bottom: 1rem;
+}
+
+.fitur p,
+.contact p {
+      text-align: center;
+      max-width: 30rem;
+      margin: auto;
+      font-size: 1.2rem;
+      font-weight: 100;
+      line-height: 1.6;
+}
+
+.fitur .row {
+      display: flex;
+      margin-top: 0rem;
+      justify-content: center;
+}
+
+.fitur .row .fitur-img {
+      display: flex;
+      padding-bottom: 3rem;
+}
+
+.fitur .row .fitur-img img {
+      /* border-radius: 50%; */
+      width: 65%;
+}
+
+.fitur .row .content {
+      text-align: start;
+      padding-top: 5.5rem;
+}
+
+.fitur .row .content p {
+      text-align: justify;
+      font-size: 1rem;
+      font-weight: 300;
+      padding-top: 1rem;
+}
+
+.fiur .row .fitur-card .fitur-card-title {
+      margin: 1rem auto 0.5rem;
+      text-align: center;
+}
+
+/* bagian nilai/keunggulan */
+.value {
+      font-size: 1.8rem;
+      text-align: center;
+}
+
+.value .row {
+      display: flex;
+      flex: 1 1 45rem;
+      margin: 5rem 0rem;
+      justify-content: center;
+}
+
+.value .row .value-img {
+      width: 70%;
+}
+
+.value .row .value-img img {
+      padding-left: 0rem;
+      width: 70%;
+}
+
+.value .row .value-card {
       display: flex;
       flex-direction: column;
-      width: 237px;
-      height: 50vh;
-      overflow: hidden;
-      box-shadow: 0 0.1rem rgba (0, 0, 0, 0.1);
-      border-radius: 8px;
-      background: #ece9e6;
-      background: linear-gradient(to bottom, #ffffff, #ece9e6);
+      font-size: 1.2rem;
 }
 
-.news-box:hover {
-      -webkit-transition: 0.5s;
-      transition: 0.5s ease;
-      -webkit-transform: scale(1.04);
-      transform: scale(1.04);
+.value .row .value-card .value-title {
+      padding-top: 1rem;
+      display: flex;
+      align-items: center;
 }
 
-img {
-      width: 250px;
-      height: 150px;
-      display: block;
+.value .row .value-card p {
+      text-align: start;
+}
+
+/* Bagian kontak kami */
+.contact .row {
+      display: flex;
+      margin-top: 2rem;
+      background-color: #eee;
+      align-items: center;
+      justify-content: center;
+}
+
+.contact .row .map {
+      flex: 1 1 45rem;
+      width: 100%;
       object-fit: cover;
 }
 
-.news-body {
-      padding: 4px 4px 0 4px;
+.contact .row form {
       display: flex;
       flex-direction: column;
+      flex: 1 1 45rem;
+      padding: 3rem 2rem;
+      align-items: flex-end;
 }
 
-.tag {
-      align-self: flex-start;
-      padding: 0.25em 0.75em;
-      border-radius: 1em;
-      font-size: 0.5rem;
-}
-
-.tag+.tag {
-      margin-left: 0.5em;
-}
-
-.tag-blue {
-      background: #56ccf2;
-      background: linear-gradient(to bottom, #2f80ed, #56ccf2);
-      color: #fafafa;
-}
-
-.news-body h4 {
-      font-size: 14px;
-      text-transform: capitalize;
-
-}
-
-.news-body p {
-      font-size: 10px;
-      margin-top: 0.1px;
-}
-
-/* FITUR UTAMA */
-.fitur-utama {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      margin-bottom: 2vh;
-      margin-left: 78px;
-      margin-right: 8px;
-      justify-content: center;
-}
-
-.fitur {
-      text-align: center;
-      margin: 0 3rem 3rem 0;
-}
-
-.fitur img {
-      width: 90%;
-}
-
-.fitur h6 {
-      font-size: 16px;
-      font-weight: 550;
-      color: #535961;
-      font-family: NunitoSansBold, sans-serif;
-      margin-top: 0.5vh;
-      margin-bottom: 2vh;
-}
-
-/* JOIN BUTTON */
-.button {
+.contact .row form .input-group {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+      background-color: #fff;
+      border: 1px solid #000000;
+      padding-left: 0.8rem;
+      border-radius: 10px;
+      width: 65%;
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.687);
 }
 
-.join-button {
+.contact .row form .input-group input {
+      padding: 0.5rem;
+      font-size: 0.8rem;
+      background: none;
       border: none;
-      background-color: #84dcf5e4;
+}
+
+.contact .row form button {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: #000;
+      background-color: var(--primary);
+      border-radius: 10px;
       cursor: pointer;
-      padding: 5px;
-      border-radius: 18px;
-      width: 30%;
-      padding: 20px;
-      margin-bottom: 100px;
-      margin-top: 20px;
 }
 
-.join-button a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 15px;
+.contact .row form button:hover {
+      background-color: #00eaff;
+      transition: 0.5s ease-in-out;
 }
 
-.join-button:hover {
-      background-color: #3acff9;
-      transition: all 0.5s ease;
-}
-
-/* BAGIAN FOOTER */
-ul {
-      list-style: none;
-}
-
-.row {
-      display: flex;
-}
-
+/* bagian footer */
 footer {
-      background-image: linear-gradient(#a5bccb, #38a3a5);
-      position: relative;
-      line-height: 1.5;
-}
-
-.footer-col {
-      padding: 0 15px;
-}
-
-.footer-col h4 {
-      font-size: 18px;
-      color: #ffffff;
-      text-transform: capitalize;
-      font-weight: 500;
-      position: relative;
-}
-
-
-.footer-col h4::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -10;
-      background-color: #e91e63;
-      height: 2px;
-      box-sizing: border-box;
-      width: 50px;
-}
-
-.footer-col ul li a {
-      font-size: 16px;
-      text-transform: capitalize;
-      color: #ffffff;
-      font-weight: 300;
-      color: #ffffff;
-      transition: all 0.3s ease;
-}
-
-.footer-col ul li a:hover {
-      color: #38a3a5;
-      padding-left: 8px;
-}
-
-.footer-col .social-links a {
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255, 255, 255, 0.2);
-      margin: 0 10px 10px 0;
+      background-color: var(--primary);
       text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      color: #ffffff;
-      transition: all 0.5s ease;
+      padding: 1rem 3rem;
+      margin-top: 3rem;
 }
 
-.footer-col .social-links a:hover {
-      color: #0389ff;
-      background-color: #c2e5e6;
+footer .socials {
+      padding: 1rem 0;
+}
+
+footer .socials a {
+      color: #696767;
+      margin: 0.5rem;
+      font-size: 1.5rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+      color: #000000;
+      transition: all 0.5s;
+}
+
+footer .links {
+      margin-bottom: 1.4rem;
+}
+
+footer .links a {
+      color: #696767;
+      padding: 0.5rem;
+}
+
+footer .credit {
+      font-size: 0.8rem;
+}
+
+footer .credit a {
+      color: #000;
+      font-weight: 700;
 }
 
 
 
 /* RESPONSIVE */
-
 /* Pengaturan viewport untuk masing-masing ukuran device */
 
-/* SMARTPHONE */
-@media (max-width: 768px) {
+/* Smartphone */
+@media screen and (max-width: 450px) {
 
-      .nav-links li a {
-            font-size: 14px;
+      html {
+            font-size: 100%;
       }
 
-      nav .logo {
-            width: 10%;
+      /* navigasi bar */
+      nav ul {
+            position: absolute;
+            right: 0;
+            top: 0;
+            /* width: 80%; */
+            height: 115vh;
+            flex-direction: column;
+            margin-top: 61px;
+            align-items: center;
+            background-color: #bceaf9;
+            /* transform: translateY(-100%); */
+            transform: translateX(100%);
+            transition: all 1s;
+            opacity: 0;
+            z-index: 1;
       }
 
-      /* bagian slogan */
-      .content-wrapper {
-            font-size: 12px;
-            margin-top: 20px;
+      nav ul.slide {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 1;
       }
 
-      /* bagian definisi dan visi */
-      .content {
-            grid-gap: 6px;
-            margin-right: 5px;
-            margin-left: 5px;
+      nav ul li {
+            padding-top: 15px;
       }
 
-      .content .definisi {
-            width: 100%;
-            padding-left: 6px;
-            padding-right: 6px;
+      .menu-toggle {
+            display: flex;
       }
 
-      .definisi p {
-            font-size: 14px;
+      /* button */
+      .button-nav {
+            position: absolute;
+            bottom: 2%;
+            right: 22%;
+            flex-direction: column;
+            z-index: -1;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: all 1s;
       }
 
-      .content .visi {
-            width: 100%;
+      /* profile button */
+      #profile {
+            margin-bottom: 4px;
       }
 
-      .nilai-box {
-            justify-content: center;
-      }
-
-      .nilai-box .nilai {
-            margin-left: 0;
-            margin-right: 0;
-            font-size: 14px;
-      }
-
-      .nilai-box .nilai img {
-            width: 80px;
-      }
-
-      /* bagian slider artikel-box */
-      .slide {
-            height: 25vh;
-            margin: 3px;
-      }
-
-      .slide a {
-            font-size: 14px;
-            bottom: 10px;
-      }
-
-      /* bagian news/event terbaru */
-      .news-box {
-            width: 178px;
-            height: auto;
-      }
-
-      .news-box img {
-            width: 100%;
-            height: 120px;
-      }
-
-      .news-body h4 {
-            font-size: 12px;
-      }
-
-      /* bagian join button */
-      .join-button {
-            margin-top: 2px;
-            margin-bottom: 80px;
+      .button-nav.slide {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 1;
       }
 
       /* bagian footer */
-      .footer-col {
-            padding: 0 10px;
+      footer .links a {
+            padding: 0.1rem;
       }
-
-      .footer-col h4 {
-            font-size: 16px;
-      }
-
-      .footer-col ul li a {
-            font-size: 14px;
-      }
-
-      .footer-col .social-links a {
-            margin: 0 5px 5px 0;
-      }
-
 }
 
-/* TABLET */
-@media (min-width: 769px) and (max-width:1024px) {
+/* Tablet */
+@media screen and (max-width: 768px) {
 
-      /* bagian slogan */
-      .content-wrapper {
-            font-size: 24px;
-            margin-top: 20px;
+      html {
+            font-size: 100%;
       }
 
-      /* bagian definisi dan visi */
-      h3 {
-            font-size: 26px;
+      /* navigasi bar */
+      nav ul {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80%;
+            /* height: 115vh; */
+            height: 100%;
+            flex-direction: column;
+            margin-top: 61px;
+            align-items: center;
+            background-color: #bceaf9;
+            transform: translateY(-100%);
+            /* transform: translateX(100%); */
+            transition: all 1s;
+            opacity: 0;
+            z-index: 1;
       }
 
-      .content .definisi {
+      nav ul.slide {
+            opacity: 1;
+            transform: translateX(0);
+            z-index: 1;
+      }
+
+      nav ul li {
+            padding-top: 15px;
+      }
+
+      .menu-toggle {
+            display: flex;
+      }
+
+      nav .button-nav {
+            gap: 4px;
+      }
+
+      .hero {
+            margin-bottom: 7.5rem;
+      }
+
+      /* bagian tentang kami */
+      .about,
+      .fitur,
+      .value {
+            padding-top: 0.1rem;
+            padding-bottom: 7rem;
+      }
+
+      .about .row {
+            flex-wrap: wrap;
+      }
+
+      .about .row .about-img img {
             width: 100%;
+            padding-left: 0rem;
+            object-fit: cover;
+            object-position: center;
       }
 
-      .content p {
-            font-size: 24px;
+      .about .row .content {
+            padding: 0;
       }
 
-      .content .visi {
-            width: 100%;
+      .about .row .content h3 {
+            margin-top: 1rem;
+            font-size: 2rem;
       }
 
-      .nilai-box {
+      .about .row .content p {
+            font-size: 1.6rem;
+      }
+
+      /* bagian fitur */
+      .fitur .row {
+            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
-
       }
 
-      .nilai-box .nilai {
-            font-size: 24px;
-      }
-
-      .nilai-box .nilai img {
-            width: 160px;
-      }
-
-      .bg-overlay {
-            height: 30%;
-      }
-
-      /* bagian slider artikel-box */
-      .slide {
-            height: 30vh;
-            margin: 3px;
-      }
-
-      .slide a {
-            font-size: 30px;
-            bottom: 20px;
-      }
-
-      /* bagian news/event terbaru */
-      .news-box {
-            width: 400px;
-            height: auto;
-      }
-
-      .news-box img {
+      .fitur .row .fitur-img img {
             width: 100%;
-            height: 210px;
+            height: 50%;
       }
 
-      .news-body h4 {
-            font-size: 24px;
+      .fitur .row .content {
+            padding: 0rem 1rem;
+            text-align: center;
       }
 
-      .news-body p {
-            font-size: 20px;
+      /* bagian value */
+      .value .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3rem 1rem;
       }
 
-      .tag {
-            font-size: 1.1rem;
+      .value .row .value-img {
+            width: 100%;
       }
 
-      /* bagian join button */
-      .join-button {
-            width: 55%;
-            padding: 30px;
+      .value .row .value-img img {
+            width: 100%;
       }
 
-      .join-button a {
-            font-size: 25px;
+
+      /* bagian kontak */
+      .contact .row {
+            flex-wrap: wrap;
       }
 
-      /* bagian footer */
-      .footer-col {
-            padding: 0 15px;
+      .contact .row .map {
+            height: 30rem;
       }
 
-      .footer-col h4 {
-            font-size: 28px;
+      .contact .row form {
+            padding-top: 1.5rem;
+            align-items: flex-end;
       }
 
-      .footer-col h4::before {
-            width: 75px;
+      .contact .row form .input-group {
+            width: 100%;
       }
 
-      .footer-col ul li a {
-            font-size: 26px;
+      .contact .row form .input-group input {
+            padding: 0.8rem;
+            font-size: 1rem;
       }
 
-      .footer-col .social-links a {
-            height: 40px;
-            width: 40px;
-            margin: 0 5px 8px 0;
-            line-height: 40px;
+      .contact .row form button {
+            width: 60%;
       }
 
+      .footer .socials a {
+            font-size: 1.8rem;
+      }
 }
 
-/* DESKTOP */
-@media (min-width: 1025px) {}
+/* Laptop */
+@media screen and (max-width: 1366px) {
+      html {
+            font-size: 90%;
+      }
+}

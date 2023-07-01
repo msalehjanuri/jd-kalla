@@ -6,261 +6,230 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" type="image/x-icon" href="image/logoapp2.png">
-      <title>Landing Page | NgupaApp</title>
+      <title>Home | NgupaApp</title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+            rel="stylesheet">
+
+
+      <!-- Style -->
       <link rel="stylesheet" href="style.css">
       <script src="fontawesome/all.js"></script>
 </head>
 
 <body>
 
-      <!-- KODE UNTUK MENGHANDLE BAGIAN NAVIGASI BAR -->
+      <!-- navigasi bar start -->
       <nav>
             <div class="logo">
-                  <img src="image/logoapp.png" alt="" srcset="">
+                  <a href=""><img src="image/logoapp2.png" alt="logo aplikasi"></a>
             </div>
 
-            <ul class="nav-links">
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#artikel">News</a></li>
-                  <li><a href="#sosmed">Contact</a></li>
-                  <li><a href="#visi">Services</a></li>
+            <ul>
+                  <li><a href="#about">Tentang Kami</a></li>
+                  <li><a href="#fitur">Fitur Utama</a></li>
+                  <li><a href="#value">Keunggulan</a></li>
+                  <li><a href="#contact">Kontak</a></li>
                   <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">Language</a>
-                        <!-- <a class="fa fa-globe"></a> -->
-                        <div class="dropdown-content">
-                              <a href="#">Indonesia</a>
-                              <a href="#">English</a>
+                        <a href="javascript:void(0)" class="dropbtn">Bahasa</a>
+                        <div class="dropdown-menu">
+                              <a href="">Indonesia</a>
+                              <a href="">English</a>
                         </div>
                   </li>
             </ul>
+
+            <div class="menu-toggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+            </div>
       </nav>
 
-      <!-- KODE UNTUK MENGHANDLE BACKGROUND DAN MOTTO -->
-      <div class="content-wrapper">
-            <h1 class="upper">TOGETHER</h1>
-            <h1 class="lower">we</h1>
-            <h1 class="upper">CAN</h1>
-            <h1 class="lower">create</h1>
-            <h1 class="upper">CHANGE</h1>
-      </div>
+      <!-- navigasi bar end -->
 
-      <div class="bg-overlay bg-overlay-40"></div>
-
-      <!-- KODE UNTUK MENGHANDLE DEFINISI & KEUNGGULAN APLIKASI -->
-      <div class="content">
-            <div class="definisi" id="about">
-                  <h3>Apa itu NgupaApp?</h3>
-                  <p>NgupaApp merupakan aplikasi yang memudahkan para pelaku usaha dibidang
-                        makanan dan kuliner untuk dapat memperoleh bahan pokok yang dibutuhkan,
-                        langsung dari para penghasil maupun lewat satu distributor saja.
-                        Selain itu, aplikasi ini juga memberikan kemudahan kepada para pelaku
-                        dibidang pertanian dan kelautan untuk menjual hasilnya dengan harga
-                        yang sesuai dengan harga pasar.
-
+      <!-- Hero section start -->
+      <section class="hero" id="home">
+            <main class="content">
+                  <h1><span>Together</span> we can <span>create change</span></h1>
+                  <p>Bersama NgupaApp, kini saatnya kita membangun perubahan. Mari bergabung bersama kami secara gratis.
                   </p>
-            </div>
+                  <a href="login-register.html" class="cta">Gabung Sekarang</a>
 
-            <div class="visi" id="visi">
-                  <h3>Kenapa NgupaApp?</h3>
-                  <div class="nilai-box">
-                        <div class="nilai">Gratis
-                              <img src="image/free.png" alt="">
-                        </div>
-                        <div class="nilai">Terpercaya
-                              <img src="image/trusted.png" alt="">
-                        </div>
-                        <div class="nilai">Terbarukan
-                              <img src="image/uptodate.png" alt="">
-                        </div>
-                  </div>
-            </div>
-      </div>
+            </main>
+      </section>
+      <!-- Hero section end -->
 
-      <!-- KODE UNTUK MENGHANDLE BAGIAN EVENT/BERITA TERBARU -->
-      <div class="artikel-box" id="artikel">
-            <div class="slide"
-                  style="background-image: url('https://akcdn.detik.net.id/visual/2018/03/02/d15811fd-74a5-4c73-83a2-47ea5c056105_169.jpeg?w=715&q=90');">
-                  <a
-                        href="https://www.cnbcindonesia.com/research/20230302072955-128-418136/nilai-tukar-petani-periode-februari-naik-mulai-sejahtera">
-                        Nilau Tukar Petani Periode Februari Naik, Sejahtera?</a>
-            </div>
+      <!-- About Section Start -->
+      <section class="about" id="about">
+            <h2>Tentang <span>Kami</span></h2>
 
-            <div class="slide"
-                  style="background-image: url('https://asset.kompas.com/crops/S_oG_5SNKUKpAYMPPdLuwtEWd7k=/7x8:917x615/750x500/data/photo/2023/03/20/6418338060d55.jpg');">
-                  <a
-                        href="https://www.kompas.com/skola/read/2023/03/20/190000469/metode-pengolahan-hasil-peternakan-dan-perikanan">
-                        Metode Pengolahan Hasil Peternakan dan Perikanan</a>
-            </div>
-
-            <div class="slide"
-                  style="background-image: url('https://pict.sindonews.net/dyn/732/pena/news/2022/05/05/185/761455/pengusaha-kuliner-ri-terkendala-bumbu-nusantara-di-mancanegara-menparekraf-saya-dengar-langsung-rlw.jpeg');">
-                  <a
-                        href="https://lifestyle.sindonews.com/read/761455/185/pengusaha-kuliner-ri-terkendala-bumbu-nusantara-di-mancanegara-menparekraf-saya-dengar-langsung-1651709137">
-                        Pengusaha Kuliner RI Terkendala Bumbu Nusantara di Mancanegara,
-                        Menparekraf: Saya Dengar Langsung
-                  </a>
-            </div>
-
-            <div class="slide"
-                  style="background-image: url('https://www.djkn.kemenkeu.go.id/files/images/2022/11/beverage-factory-interior-conveyor-with-bottles-juice-water-equipments.jpg');">
-                  <a
-                        href="https://www.djkn.kemenkeu.go.id/kanwil-suluttenggomalut/baca-artikel/15588/Kondisi-Industri-Pengolahan-Makanan-dan-Minuman-di-Indonesia.html">
-                        Kondisi Industri Pengolahan Makanan dan Minuman di Indonesia</a>
-            </div>
-
-            <div class="slide"
-                  style="background-image: url('https://www.simplidots.com/wp-content/uploads/05278690391d907580f8d7fe03499ed9-agrobogautama-1-1024x644.jpg');">
-                  <a href="https://www.simplidots.com/perusahaan-distributor-terbesar-indonesia/">
-                        12 Perusahaan Distributor Terbesar di Indonesia</a>
-            </div>
-      </div>
-
-
-      <!-- KODE UNTUK MENGHANDLE BAGIAN NEWS-BOX -->
-      <div class="news" id="artikel">
-            <div class="news-box">
-                  <a href="#">
-                        <img src="image/agri6.jpg" alt="" width="600">
-                  </a>
-                  <div class="news-body">
-                        <span class="tag tag-blue">Lorem Ipsum</span>
-                        <h4>Lorem Lorem Lorem IpsumDelta</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-
-            </div>
-            <div class="news-box">
-                  <a
-                        href="https://kkp.go.id/artikel/49964-menteri-trenggono-pastikan-kebijakan-pit-istimewakan-nelayan-kecil">
-                        <img src="https://kkp.go.id/an-component/media/upload-gambar-pendukung/kkp/SIARAN%20PERS/2023/03%20MARET/WhatsApp%20Image%202023-03-24%20at%2007.25.37.jpeg"
-                              alt="" width="600">
-                  </a>
-                  <div class="news-body">
-                        <span class="tag tag-blue">KKP RI</span>
-                        <h4>Menteri Trenggono Pastikan Kebijakan PIT Istimewakan Nelayan Kecil</h4>
-                        <p>JAKARTA, (23/3) - Menteri Kelautan dan Perikanan Sakti Wahyu Trenggono memastikan pelaksanaan
-                              kebijakan penangkapan ikan terukur berbasis kuota (PIT) akan memberikan banyak...</p>
-                  </div>
-            </div>
-
-            <div class="news-box">
-                  <a href="#">
-                        <img src="image/agri3.jpg" alt="" width="600">
-                  </a>
-                  <div class="news-body">
-                        <span class="tag tag-blue">Lorem Ipsum</span>
-                        <h4>Lorem Lorem Lorem IpsumDelta</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-            </div>
-
-            <div class="news-box">
-                  <a
-                        href="https://dephub.go.id/post/read/agar-harga-stabil,-menhub-jaga-kelancaran-distribusi-bahan-pangan-lewat-tol-laut">
-                        <img src="https://dephub.go.id/img/empty-image.jpg" alt="" width="600">
-                  </a>
-                  <div class="news-body">
-                        <span class="tag tag-blue">KEMENHUB RI</span>
-                        <h4>Agar Harga Stabil, Menhub Jaga Kelancara Distribusi Bahan Pangan Lewat Tol Laut</h4>
-                        <p>Jakarta – Menteri Perhubungan Budi Karya Sumadi menyatakan komitmennya untuk menjaga
-                              kelancaran distribusi
-                              bahan pangan pokok melalui pemanfaatan kapal-kapal tol laut.</p>
-                  </div>
-            </div>
-
-            <div class="news-box">
-                  <a href="#">
-                        <img src="image/agri4.jpg" alt="" width="600">
-                  </a>
-                  <div class="news-body">
-                        <span class="tag tag-blue">Lorem Ipsum</span>
-                        <h4>Lorem Lorem Lorem IpsumDelta</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  </div>
-            </div>
-      </div>
-
-      <!-- KODE UNTUK MENGHANDLE FITUR UTAMA -->
-      <h3 style="text-align: center; margin-top: 4rem;">Fitur Utama Kami</h3>
-      <div class="fitur-utama">
-
-            <div class="fitur">
-                  <img src="image/Online store _Isometric.png">
-                  <h6>Membuat Toko</h6>
-            </div>
-            <div class="fitur">
-                  <img src="image/Finance app_Isometric.png">
-                  <h6>Memantau Harga</h6>
-            </div>
-            <div class="fitur">
-                  <img src="image/Factory Worker_Isometric.png">
-                  <h6>Mencari Distributor</h6>
-            </div>
-      </div>
-
-      <!-- KODE UNTUK MENGHANDLE BUTTON JOIN -->
-      <div class="button">
-            <button class="join-button">
-                  <span class="bar"><a href="login-register.html">Click here for Join with Us</a></span>
-            </button>
-      </div>
-
-      <!-- KODE UNTUK MENGHANDLE BAGIAN FOOTER -->
-      <footer>
             <div class="row">
-                  <div class="footer-col">
-                        <h4>Sosial Media</h4>
-                        <div class="social-links" id="sosmed">
-                              <a href="#"><i class="fab fa-facebook"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fab fa-instagram"></i></a>
-                              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <div class="about-img">
+                        <img src="image/Frame 32.png" alt="Tentang Kami">
+                  </div>
+                  <div class="content">
+                        <h3>Apa itu NgupaApp?</h3>
+                        <p>NgupaApp merupakan aplikasi yang memudahkan para pelaku usaha dibidang makanan dan kuliner
+                              untuk dapat memperoleh bahan pokok yang dibutuhkan, langsung dari para penghasil maupun
+                              lewat satu distributor saja. Selain itu, aplikasi ini juga memberikan kemudahan kepada
+                              para pelaku dibidang pertanian dan kelautan untuk menjual hasilnya yang
+                              sesuai dengan harga pasar.</p>
+                        <!-- <p>Ditambah lagi dengan penggunaan nya yang gratis, terpercaya, dan tentunya terbarukan
+                              menyesuaikan dengan kebutuhan penggunanya.</p> -->
+                  </div>
+            </div>
+      </section>
+      <!-- About Section end -->
+
+      <!-- Fitur Section Start -->
+      <section class="fitur" id="fitur">
+            <h2>Fitur <span>Utama</span></h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati magni nostrum ratione? Tenetur, est
+                  libero.</p> -->
+
+            <div class="row" id="fitur1">
+                  <div class="fitur-img">
+                        <img src="image/Online store _Isometric.png" alt="fitur1" class="fitur-card-image">
+                  </div>
+                  <div class="content">
+                        <h3 class="fitur-title">Membuat Toko</h3>
+                        <p class="fitur-explain">
+                              Pengguna dengan role penjual (Petani/Nelayan/Pekebun), dapat membuat toko untuk menjual
+                              produk yang dimilikinya, sehingga memudahkan para pembeli untuk melihat produk yang mereka
+                              butuhkan.
+                        </p>
+                  </div>
+            </div>
+
+            <div class="row" id="fitur2">
+                  <div class="fitur-img">
+                        <img src="image/Finance app_Isometric.png" alt="fitur2" class="fitur-card-image">
+                  </div>
+                  <div class="content">
+                        <h3 class="fitur-title">Memantau Harga</h3>
+                        <p class="fitur-explain">
+                              Pengguna (semua role) dapat melihat dan memantau harga pasar yang diperbaharui secara
+                              berkala sesuai dengan keadaan di lapangan, sehingga bisa menjual dan membeli barang
+                              tersebut dengan harga yang sesuai.
+                        </p>
+                  </div>
+
+            </div>
+
+            <div class="row" id="fitur3">
+                  <div class="fitur-img">
+                        <img src="image/Factory Worker_Isometric.png" alt="fitur3" class="fitur-card-image">
+                  </div>
+                  <div class="content">
+                        <h3 class="fitur-title">Mencari Distributor</h3>
+                        <p class="fitur-explain">
+                              Pengguna dengan role pembeli dapat mencari pengguna dengann role distributor untuk
+                              membantu dan/atau menjadi rekan bisnisnya, sehingga dapat mempermudah dan mempercepat
+                              proses pengiriman barang yang dibeli dari tangan penjual.
+                        </p>
+                  </div>
+
+            </div>
+      </section>
+      <!-- Fitur Section end -->
+
+      <!-- Value Section Start -->
+      <section class="value" id="value">
+            <h2>Keunggulan <span>Kami</span></h2>
+            <div class="row">
+                  <div class="value-img">
+                        <img src="image/iPhone 14 Pro Mockup Space Black.png" alt="Keunggulan Kami">
+                  </div>
+                  <div class="value-card">
+                        <h3 class="value-title"><i class="fa fa-check-circle"
+                                    style="color: #00ff00;"></i>&nbsp;&nbsp;Terpercaya
+                        </h3>
+                        <p class="value-explain">
+                              Telah dipercaya lebih dari 1 juta pengguna.
+                        </p>
+
+
+                        <h3 class="value-title"><i class="fa fa-book-open" style="color: #00eaff;"></i>
+                              &nbsp;&nbsp;Gratis</h3>
+                        <p class="value-explain">
+                              Aplikasi dapat digunakan secara gratis tanpa dikenakan biaya.
+                        </p>
+
+
+                        <h3 class="value-title"><i class="fa fa-lightbulb" style="color: #ffff00;"></i>
+                              &nbsp;&nbsp;&nbsp;&nbsp;Terbarukan</h3>
+                        <p class="value-explain">
+                              Aplikasi akan terus dikembangkan secara berkala berdasarkan kebutuhan pengguna.
+                        </p>
+
+                  </div>
+            </div>
+      </section>
+      <!-- Value Section end -->
+
+      <!-- Contact Section Start -->
+      <section class="contact" id="contact">
+            <h2>Kontak <span>Kami</span></h2>
+            <p>Berikan saran & masukan anda untuk perbaikan kami yang lebih baik.</p>
+
+            <div class="row">
+                  <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63465.8433388478!2d106.79526447594897!3d-6.182226079504231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f436b8c94b07%3A0x6ea6d5398b7c82f6!2sJakarta%20Pusat%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sid!2sid!4v1686233681848!5m2!1sid!2sid"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        class="map"></iframe>
+
+                  <form action="">
+                        <div class="input-group">
+                              <i class="fa fa-user"></i>
+                              <input type="text" placeholder="nama">
                         </div>
-                  </div>
-                  <div class="footer-col">
-                        <h4>Jelajahi</h4>
-                        <ul>
-                              <li><a href="#about">Tentang</a></li>
-                              <li><a href="#">Hubungi Kami</a></li>
-                        </ul>
-                  </div>
-                  <div class="footer-col">
-                        <h4>Konten Edukasi</h4>
-                        <ul>
-                              <li><a href="#">Pendidikan</a></li>
-                              <li><a href="#">Politik</a></li>
-                              <li><a href="#">Ekonomi</a></li>
-                              <li><a href="#">Sosial</a></li>
-                              <li><a href="#">Budaya</a></li>
-                              <li><a href="#">Pertahanan & Keamanan</a></li>
-                        </ul>
-                  </div>
+
+                        <div class="input-group">
+                              <i class="fa fa-envelope"></i>
+                              <input type="text" placeholder="email">
+                        </div>
+
+                        <div class="input-group">
+                              <i class="fa fa-phone"></i>
+                              <input type="text" placeholder="no hp">
+                        </div>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                  </form>
+            </div>
+
+
+      </section>
+      <!-- Contact Section end -->
+
+      <!-- Footer Start -->
+      <footer>
+            <div class="socials">
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <div class="links">
+                  <a href="#about">Tentang Kami</a>
+                  <a href="#fitur">Fitur Utama</a>
+                  <a href="#value">Keunggulan</a>
+                  <a href="#contact">Kontak</a>
+            </div>
+
+            <div class="credit">
+                  <p>Created by <a href="">NgupaApp COMPANY</a>. | &copy; 2023</p>
             </div>
       </footer>
+      <!-- Footer end -->
 
-      <!-- SCRIPT ARTIKEL-BOX -->
-      <script>
-            activeslideimg();
-
-            function activeslideimg(activeSlide = 2) {
-                  const slides = document.querySelectorAll(".slide");
-                  slides[activeSlide].classList.add("active");
-
-                  for (const slide of slides) {
-                        slide.addEventListener("click", () => {
-                              clearActiveClasses();
-
-                              slide.classList.add("active");
-                        })
-                  }
-
-                  function clearActiveClasses() {
-                        slides.forEach((slide) => {
-                              slide.classList.remove("active");
-                        })
-                  }
-            }
-      </script>
+      <!-- javascript -->
+      <script src="index.js"></script>
 </body>
 
 </html>

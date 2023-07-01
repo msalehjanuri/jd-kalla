@@ -159,6 +159,25 @@ button {
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.287);
 }
 
+/* bagian nama user */
+.name-user {
+      display: flex;
+      gap: 15px;
+      padding-top: 20px;
+}
+
+.name-user p {
+      padding-left: 12px;
+      font-size: 18px;
+}
+
+.name-user a {
+      display: none;
+      padding-left: 12px;
+      color: #242222e9;
+}
+
+
 /* bagian search bar */
 .search-bar {
       display: flex;
@@ -557,6 +576,24 @@ footer {
             opacity: 1;
             transform: translateX(0);
             z-index: 1;
+      }
+
+      /* bagian nama user */
+      .name-user {
+            display: flex;
+            gap: 15px;
+            padding-top: 20px;
+      }
+
+      .name-user p {
+            padding-left: 12px;
+            font-size: 18px;
+      }
+
+      .name-user a {
+            display: inline-flex;
+            padding-left: 12px;
+            color: #242222e9;
       }
 
       /* bagian search bar */
